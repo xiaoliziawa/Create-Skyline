@@ -1,0 +1,7 @@
+
+#Rainbow Compound settings
+[config]
+	#Speed multiplier for Dynamic Elytra
+	#Range: 0.0 ~ 1.7976931348623157E308
+	dynamic_elytra_speed = 1.0
+

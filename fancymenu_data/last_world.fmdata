@@ -1,0 +1,7 @@
+type = last_world
+
+last_world {
+  is_server = false
+  world = D:/PrismLauncher/instance/1.19.2/.minecraft/saves/Create Skyline
+}
+
