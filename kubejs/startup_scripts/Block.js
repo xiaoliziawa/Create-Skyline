@@ -33,7 +33,4 @@ StartupEvents.registry('block', e => {
             .tagBlock(MininGlevel[Grade])
             .requiresTool(true)
     }
-
-
 })
-    

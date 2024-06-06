@@ -13,14 +13,8 @@ BlockEvents.rightClicked(e => {
 
     let ItemCreate = (blockID, resultItem, random) => {
         if (block.id === blockID && player.isShiftKeyDown()) {
-            let itemEntity = block.createEntity('item')
-            itemEntity.item = resultItem
-            itemEntity.x += 0.5
-            itemEntity.y += 1
-            itemEntity.z += 0.5
-            
             if (Math.random() < random) {
-                itemEntity.spawn()
+                block.popItemFromFace(resultItem,"up")
             }
         }
     }
@@ -35,14 +29,9 @@ BlockEvents.rightClicked(e => {
      */
     let ItemCreate2 = (blockID, resultItem, ItemID, outputRandom, emptyRandom) => {
         if (block.id === blockID && player.isShiftKeyDown() && player.mainHandItem === ItemID) {
-            let itemEntity = block.createEntity('item')
-            itemEntity.item = resultItem
-            itemEntity.x += 0.5
-            itemEntity.y += 1
-            itemEntity.z += 0.5
             let [blockX, blockY, blockZ] = [block.getX(), block.getY(), block.getZ()]
             if (Math.random() < outputRandom) {
-                itemEntity.spawn()
+                block.popItemFromFace(resultItem,"up")
             }
             if (Math.random() < emptyRandom) {
                 server.runCommandSilent(`setblock ${blockX} ${blockY} ${blockZ} minecraft:air`)
