@@ -20,7 +20,7 @@ ServerEvents.recipes(e => {
         ]
     })
 
-    // 9x 机械动力树木肥料 => 农夫乐事有机肥
+    // 9x 树木肥料 => 有机肥
     e.custom({
         "type": "lychee:item_inside",
         "item_in": [

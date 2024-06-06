@@ -18,7 +18,6 @@ BlockEvents.rightClicked(e => {
             }
         }
     }
-
     /**
      * 
      * @param {string} blockID -方块ID
