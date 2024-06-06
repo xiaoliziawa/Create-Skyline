@@ -49,6 +49,12 @@
   "jadeaddons": {
     "equipment_requirement": ""
   },
+  "exnihilosequentia": {
+    "barrel": true,
+    "crucible": true,
+    "sieve": true,
+    "infesting_leaves": true
+  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,

@@ -50,6 +50,10 @@
   "create:goggles": null,
   "custommachinery:machine_server_data_provider": null,
   "custommachinery:machine_component_provider": null,
+  "exnihilosequentia:barrel": null,
+  "exnihilosequentia:crucible": null,
+  "exnihilosequentia:sieve": null,
+  "exnihilosequentia:infesting_leaves": null,
   "minecraft:brewing_stand": null,
   "minecraft:beehive": null,
   "minecraft:command_block": null,
@@ -100,5 +104,9 @@
   "create:placard": null,
   "create:exact_block": null,
   "create:filter": null,
-  "create:goggles": null
+  "create:goggles": null,
+  "exnihilosequentia:barrel": null,
+  "exnihilosequentia:crucible": null,
+  "exnihilosequentia:sieve": null,
+  "exnihilosequentia:infesting_leaves": null
 }

@@ -6,9 +6,15 @@ StartupEvents.registry('minecraft:item', e => {
      * @param {boolean} Glow -注册方块是否发光
      * 
     */
-    
     let ItemCreate = (Id, Rarity, Glow) => { e.create(Id).rarity(Rarity).glow(Glow) }
     
-    // 石子
-    ItemCreate('stone_grain', 'common', false)
+    let ItemAdd = [
+        ['stone_grain', 'common', false], //石子
+        ['stone_rod', 'common', false] //石棍
+    ]
+
+    ItemAdd.forEach(([ids, rarity, glow]) => [
+        ItemCreate(ids,rarity,glow)
+    ])
+
 })

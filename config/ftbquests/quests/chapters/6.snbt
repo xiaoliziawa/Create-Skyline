@@ -1,0 +1,165 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6"
+	group: ""
+	icon: "minecraft:bedrock"
+	id: "2D6FDE5864BE3AB9"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "4BB6902F1AEA64C6"
+			size: 2.5d
+			tasks: [{
+				id: "11353D9F4A2984CC"
+				title: "Welcome!"
+				type: "checkmark"
+			}]
+			x: -8.75d
+			y: -1.75d
+		}
+		{
+			dependencies: ["4BB6902F1AEA64C6"]
+			id: "3853E178646F754B"
+			tasks: [{
+				icon: "minecraft:bedrock"
+				id: "6E907552A1FB3D3C"
+				observe_type: 0
+				timer: 0L
+				to_observe: "minecraft:bedrock"
+				type: "observation"
+			}]
+			title: "&2芝士什么？"
+			x: -7.065476190476211d
+			y: -1.797619047619051d
+		}
+		{
+			dependencies: ["3853E178646F754B"]
+			id: "23FBC3CDE3F84398"
+			subtitle: "&4右键基岩获取"
+			tasks: [{
+				count: 16L
+				id: "668A7763AA0357EE"
+				item: "kubejs:stone_grain"
+				type: "item"
+			}]
+			x: -6.565476190476211d
+			y: -2.797619047619051d
+		}
+		{
+			dependencies: ["23FBC3CDE3F84398"]
+			id: "2F1018F129933B98"
+			rewards: [
+				{
+					id: "5DDBCA947AE5BCC9"
+					item: "sophisticatedbackpacks:copper_backpack"
+					type: "item"
+				}
+				{
+					id: "763BD89295D83C48"
+					item: "sophisticatedbackpacks:crafting_upgrade"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 9L
+				id: "21EE91453B9A4767"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			x: -6.065476190476211d
+			y: -1.797619047619051d
+		}
+		{
+			dependencies: ["2F1018F129933B98"]
+			id: "1687710BF09D4ED0"
+			tasks: [{
+				id: "1D97D547999CB829"
+				item: "compressed:cobblestone_i"
+				type: "item"
+			}]
+			x: -5.565476190476211d
+			y: -2.797619047619051d
+		}
+		{
+			dependencies: ["2F1018F129933B98"]
+			id: "5181457D3D020319"
+			tasks: [{
+				id: "754164EC92B7A54D"
+				item: "kubejs:stone_rod"
+				type: "item"
+			}]
+			x: -5.068452380952387d
+			y: -1.827380952380956d
+		}
+		{
+			dependencies: ["1687710BF09D4ED0"]
+			id: "54CEFD38A163F541"
+			tasks: [{
+				id: "7F8E433ADD9B4507"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			x: -4.6041666666666785d
+			y: -2.791666666666668d
+		}
+		{
+			dependencies: ["5181457D3D020319"]
+			id: "462311AB65864F25"
+			tasks: [{
+				id: "67CF4BB5CECB118E"
+				item: {
+					Count: 1b
+					id: "exnihilosequentia:stone_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.016369047619058d
+			y: -1.7916666666666714d
+		}
+		{
+			dependencies: [
+				"54CEFD38A163F541"
+				"462311AB65864F25"
+			]
+			id: "5D60F1AADEC85D92"
+			tasks: [{
+				id: "1A99ACED47A75DC9"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			x: -3.5877976190476204d
+			y: -2.755952380952383d
+		}
+		{
+			dependencies: [
+				"5D60F1AADEC85D92"
+				"54CEFD38A163F541"
+			]
+			id: "616C9C22727D7B20"
+			tasks: [{
+				id: "3C50CCE24A3D05AC"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
+			x: -4.08779761904762d
+			y: -3.7916666666666714d
+		}
+		{
+			dependencies: ["616C9C22727D7B20"]
+			id: "1B7F9E34686D59F9"
+			tasks: [{
+				id: "5AEF56B4CBE64F1C"
+				item: "create:tree_fertilizer"
+				type: "item"
+			}]
+			x: -4.065327380952375d
+			y: -4.757142857142863d
+		}
+	]
+	title: "&6开端"
+}

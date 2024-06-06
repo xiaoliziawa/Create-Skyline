@@ -1,0 +1,44 @@
+{
+  "itemGroup.createmetallurgy.main_group": "创建：冶金",
+
+  "createmetallurgy.recipe.melting": "熔炼",
+  "createmetallurgy.recipe.alloying": "合金化",
+  "createmetallurgy.recipe.casting_in_basin": "在基座中浇铸",
+  "createmetallurgy.recipe.casting_in_table": "在台面中浇铸",
+  "createmetallurgy.recipe.grinding": "磨削",
+  "createmetallurgy.recipe.polishing_with_grinder": "使用磨床抛光",
+
+  "createmetallurgy.gui.goggles.foundrybasin_contents": "铸造基座内容",
+  "createmetallurgy.gui.goggles.castingbasin_contents": "浇铸基座内容",
+  "createmetallurgy.gui.goggles.castingtable_contents": "浇铸台面内容",
+
+  "createmetallurgy.generic.unit.millibuckets": "mB",
+
+  "advancement.createmetallurgy.root":  "冶金专家",
+  "advancement.createmetallurgy.root.desc": "来些火焰蛋糕，事情就会变得热闹起来！",
+  "advancement.createmetallurgy.foundry_basin":  "更好的高炉",
+  "advancement.createmetallurgy.foundry_basin.desc": "制作铸造基座和铸造顶",
+  "advancement.createmetallurgy.casting_blocks":  "不要试图吹气！",
+  "advancement.createmetallurgy.casting_blocks.desc": "制作浇铸基座或浇铸台面",
+  "advancement.createmetallurgy.tungsten_age":  "钨时代",
+  "advancement.createmetallurgy.tungsten_age.desc": "从钨铁矿石中获得钨锭",
+  "advancement.createmetallurgy.foundry_mixer":  "你让我眼花缭乱！",
+  "advancement.createmetallurgy.foundry_mixer.desc": "获得铸造搅拌器",
+  "advancement.createmetallurgy.graphite":  "高碳密度",
+  "advancement.createmetallurgy.graphite.desc": "制作石墨",
+  "advancement.createmetallurgy.graphite_molds":  "石墨模具",
+  "advancement.createmetallurgy.graphite_molds.desc": "获得任何石墨模具",
+  "advancement.createmetallurgy.light_bulb":  "爱迪生会感到骄傲！",
+  "advancement.createmetallurgy.light_bulb.desc": "制作灯泡",
+  "advancement.createmetallurgy.steel_age":  "钢铁时代",
+  "advancement.createmetallurgy.steel_age.desc": "合金化铁和焦炭",
+  "advancement.createmetallurgy.melting_dusts":  "高效工厂！",
+  "advancement.createmetallurgy.melting_dusts.desc": "获得任何非脏的矿物粉末",
+  "advancement.createmetallurgy.belt_grinder": "多么美妙的奶酪刨片机！",
+  "advancement.createmetallurgy.belt_grinder.desc": "获得机械皮带磨床",
+
+  "createmetallurgy.logistics.address": "网络地址",
+
+  "death.attack.createmetallurgy.mechanical_grinder": "%1$s的脚被变成了磨碎的奶酪",
+  "death.attack.createmetallurgy.mechanical_grinder.player": "%2$s用%1$s像奶酪一样用于他的意大利面"
+}
