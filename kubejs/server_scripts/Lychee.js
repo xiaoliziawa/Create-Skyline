@@ -1,3 +1,4 @@
+import { Function1 } from "./function" 
 ServerEvents.recipes(e => {
     // 桶 => 水 => 水桶
     e.custom({

@@ -36,8 +36,9 @@
 		}
 		{
 			dependencies: ["3853E178646F754B"]
+			description: [""]
 			id: "23FBC3CDE3F84398"
-			subtitle: "&4右键基岩获取"
+			subtitle: "<rainb>shift+右键基岩获取"
 			tasks: [{
 				count: 16L
 				id: "668A7763AA0357EE"
@@ -152,13 +153,70 @@
 		{
 			dependencies: ["616C9C22727D7B20"]
 			id: "1B7F9E34686D59F9"
+			subtitle: "&4 使用石钩子shift+右键泥土,有概率获得"
 			tasks: [{
 				id: "5AEF56B4CBE64F1C"
 				item: "create:tree_fertilizer"
 				type: "item"
 			}]
+			title: "<rainb>树木肥料!"
 			x: -4.065327380952375d
 			y: -4.757142857142863d
+		}
+		{
+			dependencies: [
+				"616C9C22727D7B20"
+				"1B7F9E34686D59F9"
+			]
+			id: "206EF28D10FC301D"
+			rewards: [{
+				id: "17250F2F9A1D638A"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			tasks: [{
+				id: "38D7C042956A65E4"
+				item: "mmt:frostite_shard"
+				type: "item"
+			}]
+			x: -3.1153273809523796d
+			y: -4.271428571428579d
+		}
+		{
+			dependencies: ["206EF28D10FC301D"]
+			description: [""]
+			id: "1713FE2C63AAB6EE"
+			rewards: [
+				{
+					id: "38D7402373FE46E9"
+					item: "create:water_wheel"
+					type: "item"
+				}
+				{
+					id: "759C2F3D8F329F38"
+					item: "create:encased_fan"
+					type: "item"
+				}
+			]
+			subtitle: "&5<shake>试试将水桶扔到地上"
+			tasks: [{
+				id: "4C0160038DD6440C"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			x: -2.472470238095241d
+			y: -3.2357142857142946d
+		}
+		{
+			dependencies: ["1713FE2C63AAB6EE"]
+			id: "3C62C485AEC85AA9"
+			tasks: [{
+				id: "6FE8AFC418E5BD93"
+				item: "farmersdelight:organic_compost"
+				type: "item"
+			}]
+			x: -1.7700892857142776d
+			y: -4.271428571428579d
 		}
 	]
 	title: "&6开端"

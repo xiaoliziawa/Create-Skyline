@@ -12,6 +12,8 @@ minecraft:birch_bees_002
 minecraft:birch_bees_005
 minecraft:birch_tall
 minecraft:blackstone_blobs
+tconstruct:blood_slime_fungus
+tconstruct:blood_slime_island_fungus
 minecraft:blue_ice
 minecraft:bonus_chest
 minecraft:cave_vine
@@ -19,6 +21,8 @@ minecraft:cave_vine_in_moss
 minecraft:chorus_plant
 minecraft:clay_pool_with_dripleaves
 minecraft:clay_with_dripleaves
+tconstruct:cobalt_ore_large
+tconstruct:cobalt_ore_small
 minecraft:crimson_forest_vegetation
 minecraft:crimson_forest_vegetation_bonemeal
 minecraft:crimson_fungus
@@ -33,10 +37,16 @@ minecraft:disk_gravel
 minecraft:disk_sand
 minecraft:dripleaf
 minecraft:dripstone_cluster
+tconstruct:earth_geode
+tconstruct:earth_slime_island_tree
+tconstruct:earth_slime_tree
 minecraft:end_gateway_delayed
 minecraft:end_gateway_return
 minecraft:end_island
 minecraft:end_spike
+tconstruct:ender_geode
+tconstruct:ender_slime_tree
+tconstruct:ender_slime_tree_tall
 minecraft:fancy_oak
 minecraft:fancy_oak_bees
 minecraft:fancy_oak_bees_0002
@@ -60,6 +70,8 @@ minecraft:ice_patch
 minecraft:ice_spike
 minecraft:iceberg_blue
 minecraft:iceberg_packed
+tconstruct:ichor_geode
+tconstruct:ichor_slime_fungus
 minecraft:jungle_bush
 minecraft:jungle_tree
 minecraft:jungle_tree_no_vine
@@ -163,6 +175,9 @@ minecraft:seagrass_simple
 minecraft:seagrass_slightly_less_short
 minecraft:seagrass_tall
 minecraft:single_piece_of_grass
+tconstruct:sky_geode
+tconstruct:sky_slime_island_tree
+tconstruct:sky_slime_tree
 minecraft:small_basalt_columns
 minecraft:spore_blossom
 minecraft:spring_lava_frozen
