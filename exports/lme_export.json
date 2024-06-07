@@ -1,0 +1,387 @@
+[
+  {
+    "modid": "inventorysorter",
+    "name": "Simple Inventory Sorter",
+    "version": "22.0.0"
+  },
+  {
+    "modid": "rhino",
+    "name": "Rhino",
+    "version": "1902.2.3-build.284"
+  },
+  {
+    "modid": "jei",
+    "name": "Just Enough Items",
+    "version": "11.6.0.1019"
+  },
+  {
+    "modid": "caelus",
+    "name": "Caelus API",
+    "version": "1.19.2-3.0.0.6"
+  },
+  {
+    "modid": "sophisticatedcore",
+    "name": "Sophisticated Core",
+    "version": "1.19.2-0.6.4.605"
+  },
+  {
+    "modid": "insanelib",
+    "name": "InsaneLib",
+    "version": "1.7.5"
+  },
+  {
+    "modid": "xaeroworldmap",
+    "name": "Xaero\u0027s World Map",
+    "version": "1.38.8"
+  },
+  {
+    "modid": "controlling",
+    "name": "Controlling",
+    "version": "10.0+7"
+  },
+  {
+    "modid": "placebo",
+    "name": "Placebo",
+    "version": "7.4.0"
+  },
+  {
+    "modid": "libx",
+    "name": "LibX",
+    "version": "1.19.2-4.2.8"
+  },
+  {
+    "modid": "mixinextras",
+    "name": "MixinExtras",
+    "version": "0.3.5"
+  },
+  {
+    "modid": "storage_crate",
+    "name": "Storage Crate",
+    "version": "2.0.0"
+  },
+  {
+    "modid": "sophisticatedbackpacks",
+    "name": "Sophisticated Backpacks",
+    "version": "1.19.2-3.20.2.1035"
+  },
+  {
+    "modid": "vintageimprovements",
+    "name": "Create: Vintage Improvements",
+    "version": "1.19.2-0.1.4.2"
+  },
+  {
+    "modid": "rainbowcompound",
+    "name": "rainbowcompound",
+    "version": "1.3.3b"
+  },
+  {
+    "modid": "balm",
+    "name": "Balm",
+    "version": "4.6.0"
+  },
+  {
+    "modid": "memoryleakfix",
+    "name": "Memory Leak Fix",
+    "version": "1.1.5"
+  },
+  {
+    "modid": "melody",
+    "name": "Melody",
+    "version": "1.0.1"
+  },
+  {
+    "modid": "momentariycore2",
+    "name": "MomentariyModder\u0027Applications",
+    "version": "4.3.1"
+  },
+  {
+    "modid": "cloth_config",
+    "name": "Cloth Config v8 API",
+    "version": "8.3.115"
+  },
+  {
+    "modid": "forge",
+    "name": "Forge",
+    "version": "43.3.13"
+  },
+  {
+    "modid": "mctb",
+    "name": "More Crafting Tables Mod",
+    "version": "1.19.2"
+  },
+  {
+    "modid": "konkrete",
+    "name": "Konkrete",
+    "version": "1.8.0"
+  },
+  {
+    "modid": "embeddium",
+    "name": "Embeddium",
+    "version": "0.3.18+mc1.19.2"
+  },
+  {
+    "modid": "rubidium",
+    "name": "Rubidium (Embeddium)",
+    "version": "0.6.2c"
+  },
+  {
+    "modid": "embeddiumplus",
+    "name": "Embeddium++",
+    "version": "1.2.13"
+  },
+  {
+    "modid": "jsonthings",
+    "name": "Json Things",
+    "version": "0.7.15"
+  },
+  {
+    "modid": "craftingtweaks",
+    "name": "CraftingTweaks",
+    "version": "15.1.9"
+  },
+  {
+    "modid": "minecraft",
+    "name": "Minecraft",
+    "version": "1.19.2"
+  },
+  {
+    "modid": "tconstruct",
+    "name": "Tinkers\u0027 Construct",
+    "version": "3.8.3.39"
+  },
+  {
+    "modid": "okzoomer",
+    "name": "OkZoomer",
+    "version": "2.1.1"
+  },
+  {
+    "modid": "farmersdelight",
+    "name": "Farmer\u0027s Delight",
+    "version": "1.19.2-1.2.4"
+  },
+  {
+    "modid": "mousetweaks",
+    "name": "Mouse Tweaks",
+    "version": "2.23"
+  },
+  {
+    "modid": "nochatreports",
+    "name": "No Chat Reports",
+    "version": "1.19.2-v1.5.1"
+  },
+  {
+    "modid": "jade",
+    "name": "Jade",
+    "version": "8.9.2"
+  },
+  {
+    "modid": "customfluidmixin",
+    "name": "Custom Fluid Mixin",
+    "version": "1.3.2-mc1.19.2"
+  },
+  {
+    "modid": "skyblockbuilder",
+    "name": "Skyblock Builder",
+    "version": "1.19.2-4.2.22"
+  },
+  {
+    "modid": "mmt",
+    "name": "More Materials",
+    "version": "0.2a-1.19.2-morematerials"
+  },
+  {
+    "modid": "defaultworldtype",
+    "name": "Default World Type",
+    "version": "1.19.1-3.1.0"
+  },
+  {
+    "modid": "textanimator",
+    "name": "Text Animator",
+    "version": "1.1.2"
+  },
+  {
+    "modid": "curios",
+    "name": "Curios API",
+    "version": "1.19.2-5.1.6.2"
+  },
+  {
+    "modid": "flywheel",
+    "name": "Flywheel",
+    "version": "0.6.10-20"
+  },
+  {
+    "modid": "create",
+    "name": "Create",
+    "version": "0.5.1.f"
+  },
+  {
+    "modid": "createoreexcavation",
+    "name": "Create Ore Excavation",
+    "version": "1.2.3"
+  },
+  {
+    "modid": "mantle",
+    "name": "Mantle",
+    "version": "1.10.36"
+  },
+  {
+    "modid": "xaerominimap",
+    "name": "Xaero\u0027s Minimap",
+    "version": "24.2.0"
+  },
+  {
+    "modid": "oculus",
+    "name": "Oculus",
+    "version": "1.6.9"
+  },
+  {
+    "modid": "create_sa",
+    "name": "Create Stuff \u0026 Additions",
+    "version": "2.0.4."
+  },
+  {
+    "modid": "fastbench",
+    "name": "Fast Workbench",
+    "version": "7.1.4"
+  },
+  {
+    "modid": "storagedrawers",
+    "name": "Storage Drawers",
+    "version": "11.1.2"
+  },
+  {
+    "modid": "jecharacters",
+    "name": "Just Enough Characters",
+    "version": "4.5.9"
+  },
+  {
+    "modid": "entityculling",
+    "name": "EntityCulling",
+    "version": "1.6.1"
+  },
+  {
+    "modid": "ftbultimine",
+    "name": "FTB Ultimine",
+    "version": "1902.4.1-build.90"
+  },
+  {
+    "modid": "fancymenu",
+    "name": "FancyMenu",
+    "version": "3.2.3"
+  },
+  {
+    "modid": "lootjs",
+    "name": "LootJS",
+    "version": "2.9.1"
+  },
+  {
+    "modid": "createmetallurgy",
+    "name": "Create Metallurgy",
+    "version": "0.0.2-1.19.2"
+  },
+  {
+    "modid": "architectury",
+    "name": "Architectury",
+    "version": "6.6.92"
+  },
+  {
+    "modid": "kubejs",
+    "name": "KubeJS",
+    "version": "1902.6.2-build.69"
+  },
+  {
+    "modid": "ftblibrary",
+    "name": "FTB Library",
+    "version": "1902.4.1-build.236"
+  },
+  {
+    "modid": "itemfilters",
+    "name": "Item Filters",
+    "version": "1902.2.9-build.51"
+  },
+  {
+    "modid": "custommachinery",
+    "name": "Custom Machinery",
+    "version": "0.9.20"
+  },
+  {
+    "modid": "ftbteams",
+    "name": "FTB Teams",
+    "version": "1902.2.14-build.123"
+  },
+  {
+    "modid": "ftbquests",
+    "name": "FTB Quests",
+    "version": "1902.5.8-build.345"
+  },
+  {
+    "modid": "ftbxmodcompat",
+    "name": "FTB XMod Compat",
+    "version": "1.2.4"
+  },
+  {
+    "modid": "kubejs_create",
+    "name": "KubeJS Create",
+    "version": "1902.2.4-build.36"
+  },
+  {
+    "modid": "ferritecore",
+    "name": "Ferrite Core",
+    "version": "5.0.3"
+  },
+  {
+    "modid": "lanserverproperties",
+    "name": "Lan Server Properties",
+    "version": "1.9.1"
+  },
+  {
+    "modid": "durabilityviewer",
+    "name": "Giselbaers Durability Viewer",
+    "version": "1.19.1-forge42.0.1-1.10"
+  },
+  {
+    "modid": "lychee",
+    "name": "Lychee Tweaker",
+    "version": "3.15.2"
+  },
+  {
+    "modid": "jadeaddons",
+    "name": "Jade Addons",
+    "version": "3.6.0"
+  },
+  {
+    "modid": "probejs",
+    "name": "ProbeJS",
+    "version": "5.3.4"
+  },
+  {
+    "modid": "portablecraftingtable",
+    "name": "Portable Crafting Table",
+    "version": "3.1.6-[FORGE]"
+  },
+  {
+    "modid": "exnihilosequentia",
+    "name": "Ex Nihilo: Sequentia",
+    "version": "4.2.0"
+  },
+  {
+    "modid": "polylib",
+    "name": "PolyLib",
+    "version": "1900.0.3-build.100"
+  },
+  {
+    "modid": "ftbbackups2",
+    "name": "FTB Backups 2",
+    "version": "1.0.23"
+  },
+  {
+    "modid": "compressed",
+    "name": "Compressed",
+    "version": "1.8.0"
+  },
+  {
+    "modid": "createaddition",
+    "name": "Create Crafts \u0026 Additions",
+    "version": "1.19.2-1.2.3"
+  }
+]
