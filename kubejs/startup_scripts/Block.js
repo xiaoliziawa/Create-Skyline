@@ -24,7 +24,7 @@ StartupEvents.registry('block', e => {
      * @param {string} Tool -方块破坏需要的工具类型
      * @param {string} Grade -方块需要的工具材质
      */
-    let blockAdd = (ID, SoundType, Hardness, ResisTance, Tool,Grade) => {
+    let blockAdd = (ID, SoundType, Hardness, ResisTance, Tool, Grade) => {
         e.create(ID)
             .soundType(SoundType)
             .hardness(Hardness)
@@ -32,5 +32,5 @@ StartupEvents.registry('block', e => {
             .tagBlock(ToolType[Tool])
             .tagBlock(MininGlevel[Grade])
             .requiresTool(true)
-    }
+  }
 })
