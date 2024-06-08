@@ -1,7 +1,7 @@
 BlockEvents.rightClicked((event) => {
-  const { player, hand, block, server, item } = event;
+  const { player, hand, block, server, item } = event
 
-  if (hand.name() !== "MAIN_HAND") return;
+  if (hand.name() !== "MAIN_HAND") return
 
   /**
    *
@@ -12,7 +12,7 @@ BlockEvents.rightClicked((event) => {
   function spawnItem1(blockId, resultItem, random) {
     if (block.id === blockId && player.shiftKeyDown) {
       if (Math.random() < random) {
-        block.popItemFromFace(resultItem, "up");
+        block.popItemFromFace(resultItem, "up")
       }
     }
   }
@@ -37,10 +37,10 @@ BlockEvents.rightClicked((event) => {
       player.mainHandItem.id === itemId
     ) {
       if (Math.random() < outputRandom) {
-        block.popItemFromFace(resultItem, "up");
+        block.popItemFromFace(resultItem, "up")
       }
       if (Math.random() < emptyRandom) {
-        block.set("air");
+        block.set("air")
       }
     }
   }
@@ -56,20 +56,20 @@ BlockEvents.rightClicked((event) => {
   function spawnItem3(blockID, resultItem, itemId, outputRandom, emptyRandom) {
     if (block.id === blockID && player.mainHandItem.id === itemId) {
       if (Math.random() < outputRandom) {
-        block.popItemFromFace(resultItem, "up");
-        item.count--;
+        block.popItemFromFace(resultItem, "up")
+        item.count--
       }
       if (Math.random() < emptyRandom) {
-        block.set("air");
+        block.set("air")
       }
     }
   }
 
   // 基岩 => 石子
-  spawnItem1("minecraft:bedrock", "kubejs:stone_grain", 0.4);
+  spawnItem1("minecraft:bedrock", "kubejs:stone_grain", 0.4)
 
   // 一重压缩圆石 => 砂砾
-  spawnItem1("compressed:cobblestone_i", "minecraft:gravel", 0.2);
+  spawnItem1("compressed:cobblestone_i", "minecraft:gravel", 0.2)
 
   // 泥土 => 树木肥料
   spawnItem2(
@@ -78,7 +78,7 @@ BlockEvents.rightClicked((event) => {
     "exnihilosequentia:stone_crook",
     0.2,
     0.1
-  );
+  )
 
   //霜石碎片
   spawnItem3(
@@ -87,5 +87,5 @@ BlockEvents.rightClicked((event) => {
     "create:tree_fertilizer",
     0.12,
     0.1
-  );
-});
+  )
+})

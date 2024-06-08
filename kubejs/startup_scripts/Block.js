@@ -5,7 +5,7 @@ StartupEvents.registry("block", (event) => {
     axe: "minecraft:mineable/axe",
     shovel: "minecraft:mineable/shovel",
     hoe: "minecraft:mineable/hoe",
-  };
+  }
   // 挖掘等级
   const miningLevel = {
     wooden: "minecraft:needs_wooden_tool",
@@ -14,7 +14,7 @@ StartupEvents.registry("block", (event) => {
     golded: "minecraft:needs_gold_tool",
     diamond: "minecraft:needs_diamond_tool",
     nether: "forge:needs_netherite_tool",
-  };
+  }
   /**
    *
    * @param {string} ID -方块ID
@@ -35,16 +35,16 @@ StartupEvents.registry("block", (event) => {
     const block = event.create(ID)
       .soundType(SoundType)
       .hardness(Hardness)
-      .resistance(ResisTance);
+      .resistance(ResisTance)
     if (Array.isArray(Tool)) {
-      Tool.forEach(v => block.tagBlock(toolType[v]));
+      Tool.forEach(v => block.tagBlock(toolType[v]))
     } else {
-      block.tagBlock(toolType[Tool]);
+      block.tagBlock(toolType[Tool])
     }
 
     if (!!Grade) {
       block.tagBlock(miningLevel[Grade])
-        .requiresTool(true);
+        .requiresTool(true)
     }
   }
-});
+})

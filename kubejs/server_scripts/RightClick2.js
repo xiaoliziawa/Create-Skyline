@@ -1,5 +1,5 @@
 BlockEvents.rightClicked((event) => {
-  const { player, item, block } = event;
+  const { player, item, block } = event
 
   /**
    * @param {number} min 最小值
@@ -7,7 +7,7 @@ BlockEvents.rightClicked((event) => {
    * @returns {number}
    */
   function randomRange(min, max) {
-    return Utils.random.nextInt(min, max + 1);
+    return Utils.random.nextInt(min, max + 1)
   }
 
   /**
@@ -17,15 +17,15 @@ BlockEvents.rightClicked((event) => {
    * @param {number} chance 概率
    */
   function BlockSet(blockId, setBlockId, itemId, chance) {
-    if (player.mainHandItem.id !== itemId) return;
+    if (player.mainHandItem.id !== itemId) return
     if (
       block.id === blockId &&
       player.mainHandItem.id === itemId &&
       Math.random() < chance
     ) {
-      item.count = 0;
-      block.set(setBlockId);
+      item.count = 0
+      block.set(setBlockId)
     }
   }
-  BlockSet("minecraft:dirt", "minecraft:water", "mmt:frostite_shard", 0.1);
-});
+  BlockSet("minecraft:dirt", "minecraft:water", "mmt:frostite_shard", 0.1)
+})

@@ -4,15 +4,15 @@ ItemEvents.rightClicked((e) => {
     player,
     player: { mainHandItem },
     server,
-  } = e;
+  } = e
 
   if (!mainHandItem.empty) {
     if (mainHandItem.id === id && player.shiftKeyDown) {
-      player.runCommandSilent("kubejs hand");
+      player.runCommandSilent("kubejs hand")
     }
 
     if (mainHandItem === "minecraft:diamond") {
-      server.runCommand("reload");
+      server.runCommand("reload")
     }
   }
-});
+})
