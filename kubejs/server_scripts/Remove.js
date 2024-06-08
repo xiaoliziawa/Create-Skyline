@@ -1,8 +1,4 @@
-ServerEvents.recipes(e => {
-    let Remove = [
-        'minecraft:cobblestone',
-    ]
-    Remove.forEach(id => {
-        e.remove({ output:id})
-    })
-})
+ServerEvents.recipes((event) => {
+  let outputRemoved = ["minecraft:cobblestone"];
+  event.remove({ output: outputRemoved });
+});

@@ -1,9 +1,8 @@
-ServerEvents.tags('item', e => {
-    let Tags = [
-        ['forge:rods', 'kubejs:stone_rod'],
-    ]
+ServerEvents.tags("item", (event) => {
+  /** @type {[[Special.ItemTag, Special.Item[]]]} */
+  let Tags = [["forge:rods", ["kubejs:stone_rod"]]];
 
-    Tags.forEach(([addTags, ItemId]) => {
-        e.add(addTags, [ItemId])
-    })
-})
+  Tags.forEach(([tagName, itemIds]) => {
+    event.add(tagName, itemIds);
+  });
+});

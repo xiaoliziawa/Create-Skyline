@@ -1,14 +1,14 @@
 {
-  "gui.storage_crate.sc_gui_tier_2_p_2.label_storage_crate": "中型板条箱 (2/2)",
-  "gui.storage_crate.sc_gui_tier_3_p_3.label_storage_crate": "大型板条箱 (3/3)",
+  "gui.storage_crate.sc_gui_tier_2_p_2.label_storage_crate": "中型板条箱（2/2)",
+  "gui.storage_crate.sc_gui_tier_3_p_3.label_storage_crate": "大型板条箱（3/3）",
   "gui.storage_crate.sc_gui_tier_1.label_storage_crate": "小型板条箱",
   "item_group.storage_crate.scct": "板条箱",
   "block.storage_crate.medium_storage_crate": "中型板条箱",
   "block.storage_crate.wood_casing": "木质外壳",
-  "gui.storage_crate.sc_gui_tier_3_p_2.label_storage_crate": "大型板条箱 (2/3)",
+  "gui.storage_crate.sc_gui_tier_3_p_2.label_storage_crate": "大型板条箱（2/3）",
   "block.storage_crate.large_storage_crate": "大型板条箱",
-  "gui.storage_crate.sc_gui_tier_2_p_1.label_storage_crate": "中型板条箱 (1/2)",
+  "gui.storage_crate.sc_gui_tier_2_p_1.label_storage_crate": "中型板条箱（1/2）",
   "block.storage_crate.small_storage_crate": "小型板条箱",
-  "gui.storage_crate.sc_gui_tier_3_p_1.label_storage_crate": "大型板条箱 (1/3)",
+  "gui.storage_crate.sc_gui_tier_3_p_1.label_storage_crate": "大型板条箱（1/3）",
   "itemGroup.tabscct": "板条箱"
 }
