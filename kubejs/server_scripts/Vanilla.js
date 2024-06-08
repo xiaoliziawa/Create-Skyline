@@ -1,4 +1,3 @@
-ServerEvents.recipes(e => {
-    const { minecraft, create, exnihilosequentia } = e.recipes
-    
-})
+ServerEvents.recipes((event) => {
+  const { minecraft, create, exnihilosequentia } = event.recipes;
+});

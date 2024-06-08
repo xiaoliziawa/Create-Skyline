@@ -1,17 +1,18 @@
-ItemEvents.rightClicked(e => {
-    const { item, player, server } = e
-    const itemId = item.id
-    const mainHandItem = player.mainHandItem
-    const isHoldingItem = mainHandItem !== "minecraft:air"
+ItemEvents.rightClicked((e) => {
+  const {
+    item: { id },
+    player,
+    player: { mainHandItem },
+    server,
+  } = e;
 
-    if (isHoldingItem) {
-        if (mainHandItem === itemId && player.shiftKeyDown) {
-            player.runCommandSilent('kubejs hand')
-        }
-
-        if (mainHandItem === 'minecraft:diamond') {
-            server.runCommandSilent('tellraw @a "正在重新加载"')
-            player.runCommandSilent('reload')
-        }
+  if (!mainHandItem.empty) {
+    if (mainHandItem.id === id && player.shiftKeyDown) {
+      player.runCommandSilent("kubejs hand");
     }
-})
+
+    if (mainHandItem === "minecraft:diamond") {
+      server.runCommand("reload");
+    }
+  }
+});
