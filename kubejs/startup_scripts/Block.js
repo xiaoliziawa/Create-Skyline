@@ -21,7 +21,7 @@ StartupEvents.registry("block", (event) => {
    * @param {string} SoundType -方块破坏&放置声音
    * @param {number} Hardness -方块硬度
    * @param {number} ResisTance -方块爆炸抗性
-   * @param {string} Tool -方块破坏需要的工具类型
+   * @param {string|string[]} Tool -方块破坏需要的工具类型
    * @param {string} Grade -方块需要的工具材质
    */
   function customBlockBuilder(
@@ -30,14 +30,21 @@ StartupEvents.registry("block", (event) => {
     Hardness,
     ResisTance,
     Tool,
-    Grade
+    Grade = ''
   ) {
-    event.create(ID)
+    const block = event.create(ID)
       .soundType(SoundType)
       .hardness(Hardness)
-      .resistance(ResisTance)
-      .tagBlock(toolType[Tool])
-      .tagBlock(miningLevel[Grade])
-      .requiresTool(true);
+      .resistance(ResisTance);
+    if (Array.isArray(Tool)) {
+      Tool.forEach(v => block.tagBlock(toolType[v]));
+    } else {
+      block.tagBlock(toolType[Tool]);
+    }
+
+    if (!!Grade) {
+      block.tagBlock(miningLevel[Grade])
+        .requiresTool(true);
+    }
   }
 });
