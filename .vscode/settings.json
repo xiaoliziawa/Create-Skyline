@@ -9,5 +9,9 @@
       "url": "./.vscode/probe.doc-schema.json"
     }
   ],
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "CodeGPT.apiKey": "LM Studio",
+  "[javascript]": {
+    "editor.defaultFormatter": "Jota0222.multi-formatter"
+  }
 }

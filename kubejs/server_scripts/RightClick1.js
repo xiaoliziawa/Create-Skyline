@@ -27,14 +27,14 @@ BlockEvents.rightClicked((event) => {
   function spawnItem2(
     blockId,
     resultItem,
-    outputRandom,
+    mainHandItem,
     outputRandom,
     emptyRandom
   ) {
     if (
       block.id === blockId &&
       player.isCrouching() &&
-      player.mainHandItem.id === itemId
+      player.mainHandItem.id === mainHandItem
     ) {
       if (Math.random() < outputRandom) {
         block.popItemFromFace(resultItem, "up")
