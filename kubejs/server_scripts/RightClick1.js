@@ -10,7 +10,7 @@ BlockEvents.rightClicked((event) => {
    * @param {number} random 掉落概率
    */
   function spawnItem1(blockId, resultItem, random) {
-    if (block.id === blockId && player.shiftKeyDown) {
+    if (block.id === blockId && player.isCrouching()) {
       if (Math.random() < random) {
         block.popItemFromFace(resultItem, "up")
       }
@@ -33,7 +33,7 @@ BlockEvents.rightClicked((event) => {
   ) {
     if (
       block.id === blockId &&
-      player.shiftKeyDown &&
+      player.isCrouching() &&
       player.mainHandItem.id === itemId
     ) {
       if (Math.random() < outputRandom) {

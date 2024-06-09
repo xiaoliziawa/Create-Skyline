@@ -7,7 +7,7 @@ ItemEvents.rightClicked((e) => {
   } = e
 
   if (!mainHandItem.empty) {
-    if (mainHandItem.id === id && player.shiftKeyDown) {
+    if (mainHandItem.id === id && player.isCrouching()) {
       player.runCommandSilent("kubejs hand")
     }
 
