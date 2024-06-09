@@ -11,9 +11,9 @@ BlockEvents.rightClicked((event) => {
   }
 
   /**
-   * @param {string} blockId 使用的方块 ID
-   * @param {string} setBlockId 放置的方块 ID
-   * @param {string} itemId 需要手持的物品 ID
+   * @param {Special.Block} blockId 使用的方块 ID
+   * @param {Special.Block} setBlockId 放置的方块 ID
+   * @param {Special.Item} itemId 需要手持的物品 ID
    * @param {number} chance 概率
    */
 
