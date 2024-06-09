@@ -184,7 +184,7 @@
 		}
 		{
 			dependencies: ["206EF28D10FC301D"]
-			description: [""]
+			description: ["使用64个霜石碎片右键泥土，有几率转化为水方块"]
 			id: "1713FE2C63AAB6EE"
 			rewards: [
 				{
@@ -204,8 +204,8 @@
 				item: "minecraft:water_bucket"
 				type: "item"
 			}]
-			x: -2.472470238095241d
-			y: -3.2357142857142946d
+			x: -2.6707589285714377d
+			y: -3.3071428571428676d
 		}
 		{
 			dependencies: ["1713FE2C63AAB6EE"]
@@ -215,8 +215,35 @@
 				item: "farmersdelight:organic_compost"
 				type: "item"
 			}]
-			x: -1.7700892857142776d
-			y: -4.271428571428579d
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"3C62C485AEC85AA9"
+				"462311AB65864F25"
+			]
+			id: "4200F26221C5F95A"
+			subtitle: "&5<shake>手持石锤敲碎肥料"
+			tasks: [{
+				id: "62B59AF1CB1D713D"
+				item: "minecraft:bone_meal"
+				type: "item"
+			}]
+			x: -2.885044642857153d
+			y: -1.7357142857142946d
+		}
+		{
+			dependencies: ["4200F26221C5F95A"]
+			id: "4312D8713F190897"
+			subtitle: "&5<shake>使用骨粉右键泥土有几率获得草籽"
+			tasks: [{
+				id: "42A86F5124F5FFF1"
+				item: "exnihilosequentia:grass_seeds"
+				type: "item"
+			}]
+			x: -1.2421875000000142d
+			y: -1.7357142857142946d
 		}
 	]
 	title: "&6开端"

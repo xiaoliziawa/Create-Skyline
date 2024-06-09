@@ -2,15 +2,6 @@ BlockEvents.rightClicked((event) => {
   const { player, item, block } = event
 
   /**
-   * @param {number} min 最小值
-   * @param {number} max 最大值
-   * @returns {number}
-   */
-  function randomRange(min, max) {
-    return Utils.random.nextInt(min, max + 1)
-  }
-
-  /**
    * @param {string} blockId 使用的方块 ID
    * @param {string} setBlockId 放置的方块 ID
    * @param {string} itemId 需要手持的物品 ID

@@ -1,17 +1,21 @@
 {
-  "json.schemas": [
-    {
-      "fileMatch": ["/lang/*.json"],
-      "url": "./.vscode/probe.lang-schema.json"
-    },
-    {
-      "fileMatch": ["/probe/docs/*.json"],
-      "url": "./.vscode/probe.doc-schema.json"
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "/lang/*.json"
+            ],
+            "url": "./.vscode/probe.lang-schema.json"
+        },
+        {
+            "fileMatch": [
+                "/probe/docs/*.json"
+            ],
+            "url": "./.vscode/probe.doc-schema.json"
+        }
+    ],
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "CodeGPT.apiKey": "LM Studio",
+    "[javascript]": {
+        "editor.defaultFormatter": "Jota0222.multi-formatter"
     }
-  ],
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "CodeGPT.apiKey": "LM Studio",
-  "[javascript]": {
-    "editor.defaultFormatter": "Jota0222.multi-formatter"
-  }
 }

@@ -1,5 +1,17 @@
 BlockEvents.rightClicked((event) => {
   const { player, hand, block, server, item } = event
+  
+  /**
+ * 生成一个介于 min 和 max 之间的随机整数，包含 min 和 max
+ * @param {number} min 最小值
+ * @param {number} max 最大值
+ * @returns {number} 随机整数
+ */
+  
+  function randomRange(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min
+  }
+  
 
   if (hand.name() !== "MAIN_HAND") return
 
@@ -88,4 +100,15 @@ BlockEvents.rightClicked((event) => {
     0.12,
     0.1
   )
+
+  // 骨粉右键泥土掉落草籽
+  if (
+    player.mainHandItem.id == "minecraft:bone_meal" && 
+    block.id == "minecraft:dirt" &&
+    randomRange(1,10) < 3
+  ) {
+    player.mainHandItem.count--
+    block.popItem("exnihilosequentia:grass_seeds")
+    block.set("air")
+  }
 })
