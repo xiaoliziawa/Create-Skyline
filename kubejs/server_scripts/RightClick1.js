@@ -9,7 +9,7 @@ BlockEvents.rightClicked((event) => {
  */
   
   function randomRange(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min
+    return Utils.random.nextInt(min, max + 1)
   }
   
 
