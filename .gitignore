@@ -13,10 +13,10 @@ shaderpacks/
 skyblock_exports/
 texturepacks/
 icon.png/
-options.txt/
-rhino.local.properties/
-usercache.json/
-usernamecache.json/
+options.txt
+rhino.local.properties
+usercache.json
+usernamecache.json
 XaeroWaypoints/
 XaeroWaypoints_*/
 XaeroWorldMAp/
