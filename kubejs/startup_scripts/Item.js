@@ -1,6 +1,6 @@
 StartupEvents.registry("item", (event) => {
   /**
-   * @param {string} id - 注册方块ID
+   * @param {string}} id - 注册方块ID
    * @param {string} [rarity="common"] - 注册方块稀有度 默认 `common`
    * @param {boolean} [glow=false] - 注册方块是否发光 默认 `false`
    */
@@ -13,7 +13,7 @@ StartupEvents.registry("item", (event) => {
    */
   let itemData = [
     ["stone_grain", "common", false],
-    ["stone_rod","common",false]
+    ["stone_rod", "common", false]
   ]
 
   itemData.forEach(([ID,Rarity,Glow]) => {

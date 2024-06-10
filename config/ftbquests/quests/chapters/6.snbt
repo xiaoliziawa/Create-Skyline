@@ -245,6 +245,34 @@
 			x: -1.2421875000000142d
 			y: -1.7357142857142946d
 		}
+		{
+			dependencies: ["4312D8713F190897"]
+			id: "0E03748B6CB004D7"
+			subtitle: "&5<shake>高草丛有几率掉落"
+			tasks: [{
+				id: "161047DD011CD55D"
+				item: "minecraft:oak_sapling"
+				type: "item"
+			}]
+			x: 0.4503348214285623d
+			y: -1.7714285714285722d
+		}
+		{
+			dependencies: [
+				"0E03748B6CB004D7"
+				"4BB6902F1AEA64C6"
+			]
+			id: "319655C6BDC516D6"
+			shape: "hexagon"
+			size: 2.5d
+			tasks: [{
+				id: "5B58FF1298487254"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
 	]
 	title: "&6开端"
 }

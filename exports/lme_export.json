@@ -30,6 +30,11 @@
     "version": "1.7.5"
   },
   {
+    "modid": "fallingleaves",
+    "name": "Falling Leaves",
+    "version": "1.3.1"
+  },
+  {
     "modid": "xaeroworldmap",
     "name": "Xaero\u0027s World Map",
     "version": "1.38.8"
@@ -163,6 +168,11 @@
     "modid": "mousetweaks",
     "name": "Mouse Tweaks",
     "version": "2.23"
+  },
+  {
+    "modid": "bettertags",
+    "name": "Better Tags",
+    "version": "1.19.2-1.2"
   },
   {
     "modid": "nochatreports",
@@ -373,6 +383,11 @@
     "modid": "ftbbackups2",
     "name": "FTB Backups 2",
     "version": "1.0.23"
+  },
+  {
+    "modid": "fastleafdecay",
+    "name": "FastLeafDecay",
+    "version": "30"
   },
   {
     "modid": "compressed",
