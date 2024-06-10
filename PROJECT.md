@@ -6,3 +6,5 @@
 > LootJs修改掉落物
 
 > Lychee.js优化部分写法
+
+> JSON thing更改
