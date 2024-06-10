@@ -2,25 +2,29 @@ ServerEvents.recipes((event) => {
   /**
    * @type {Array<Special.Item>} 
    */
-  let outputRemoved = [
+  const outputRemoved = [
     'minecraft:cobblestone'
   ]
   /**
    * @type {Array<Special.RecipeType>}
    */
-  let recipesType = [
+  const recipesType = [
     'exnihilosequentia:sieve'
   ]
-  function outputRemove(Id) {
-    event.remove({ output: Id })
+  /**
+   * @type {Array<Special.Mod>}
+   */
+  const modsRecipe = [
+    // none
+  ]
+
+  const remove = (removes, removerFunc) => {
+    removes.forEach(element => {
+      removerFunc(element)
+    })
   }
-  function recipesTypeRemove(Type) {
-    event.remove({ type:Type})
-  }
-  outputRemoved.forEach(Id => {
-    outputRemove(Id)
-  })
-  recipesType.forEach(Type => {
-    recipesTypeRemove(Type)
-  })
+
+  remove(outputRemoved, Id => event.remove({ output: Id }))
+  remove(recipesType, Type => event.remove({ type: Type }))
+  remove(modsRecipe, mod => event.remove({ mod: mod }))
 })
