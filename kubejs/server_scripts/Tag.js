@@ -9,6 +9,3 @@ ServerEvents.tags("item", (event) => {
     event.add(tagName, itemIds)
   })
 })
-
-
-
