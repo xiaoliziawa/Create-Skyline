@@ -4,4 +4,4 @@
 
 > --- By: TYX_CnJiu
 
-[<span style ="font-size: 20px;">Development Log</span>](https://github.com/xiaoliziawa/Create-Skyline/blob/main/PROJECT.md)
+[<span style ="font-size: 100px;">Development Log</span>](https://github.com/xiaoliziawa/Create-Skyline/blob/main/PROJECT.md)
