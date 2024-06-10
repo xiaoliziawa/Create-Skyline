@@ -1,8 +1,7 @@
 # Create Skyline
 
->A Minecraft Mod Pack  
+> A Minecraft Mod Pack
 
-> 　　　　　　　　　　　--- By: TYX_CnJiu
+> --- By: TYX_CnJiu
 
-[Develop](https://github.com/xiaoliziawa/Create-Skyline/blob/main/PROJECT.md)
-
+[<span style ="font-size: 20px;">Development Log</span>](https://github.com/xiaoliziawa/Create-Skyline/blob/main/PROJECT.md)
