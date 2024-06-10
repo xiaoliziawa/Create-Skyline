@@ -32,4 +32,9 @@ BlockEvents.rightClicked((event) => {
     }
   }
   BlockSet("minecraft:dirt", "minecraft:water", "mmt:frostite_shard", 0.1)
+
+  // 取消工作台右键
+    if (block.id == 'minecraft:crafting_table') {
+      event.cancel()
+    }
 })
