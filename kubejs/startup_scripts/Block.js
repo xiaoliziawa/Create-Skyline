@@ -14,7 +14,7 @@ const MiningLevel = {
   diamond: "minecraft:needs_diamond_tool",
   netherite: "forge:needs_netherite_tool",
 }
-const $sound = Java.loadClass('net.minecraft.world.level.block.SoundType');
+const $sound = Java.loadClass('net.minecraft.world.level.block.SoundType')
 /**
  *
  * @param {string} id 方块 ID
@@ -32,6 +32,6 @@ function customBlockBuilder(id, soundType, hardness, resistance, toolType, minin
       .resistance(resistance)
       .tagBlock(ToolType[toolType])
       .tagBlock(MiningLevel[miningLevel])
-      .requiresTool(true);
-  });
+      .requiresTool(true)
+  })
 }

@@ -4,7 +4,7 @@
 [client]
 	#.
 	#If enabled, Shadow Steel & Refined Radiance items appears in the creative tab
-	legacyMaterialsIntoCreativeTab = false
+	legacyMaterialsIntoCreativeTab = true
 
 	#.
 	#Position of Create: Vintage Improvements config button in the main menu & pause menu

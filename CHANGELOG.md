@@ -1,3 +1,8 @@
+# 2024/6/11
+> 再一次修改了`Remove.js`以及`Lychee.js`文件内容
+
+> `FTB Quests`任务增加
+
 # 2024/6/10
 > 修改了 `Remove.js` 文件内容，进行优化。
 
@@ -10,9 +15,7 @@
 > **More Crafting Table** 模组移除。
 
 # 2024/6/7
-
 > `exports` 模组列表。
 
 # 2024/6/2
-
 > **Create Skyline** 诞生!

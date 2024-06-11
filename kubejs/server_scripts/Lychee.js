@@ -1,34 +1,50 @@
+
+
 ServerEvents.recipes((event) => {
+  /**
+   * 
+   * @param {event} event 传入事件
+   * @param {{item:Special.Item}} item_in 需要扔出的物品
+   * @param {{blocks:Array<Special.Block>}} block_in 扔出物品进入的方块
+   * @param {Special.Item} drop_item 输出物品
+   * @param {Special.Block} place_block 替换原方块的方块
+  */
+  // Lychee Item_In event function
+  function createRecipe(event, item_in, block_in, drop_item, place_block) {
+    event.custom({
+      type: "lychee:item_inside",
+      item_in: item_in,
+      block_in: block_in,
+      post: [
+        { type: "drop_item", item: drop_item },
+        { type: "place", block: place_block },
+      ],
+    })
+  }
   // 桶 => 水 => 水桶
-  event.custom({
-    type: "lychee:item_inside",
-    item_in: { item: "bucket" },
-    block_in: { blocks: ["water"] },
-    post: [
-      { type: "drop_item", item: "minecraft:water_bucket" },
-      { type: "place", block: "minecraft:air" },
-    ],
-  })
+  createRecipe(
+    event,
+    { item: "bucket" },
+    { blocks: ["water"] },
+    "minecraft:water_bucket", 
+    "minecraft:air"
+  )
 
   // 水桶 => 空气 => 桶
-  event.custom({
-    type: "lychee:item_inside",
-    item_in: { item: "minecraft:water_bucket" },
-    block_in: "*",
-    post: [
-      { type: "drop_item", item: "minecraft:bucket" },
-      { type: "place", block: "minecraft:water" },
-    ],
-  })
+  createRecipe(
+    event,
+    { item: "minecraft:water_bucket" },
+    "*",
+    "minecraft:bucket",
+    "minecraft:water"
+  )
 
   // 9x 树木肥料 => 有机肥
-  event.custom({
-    type: "lychee:item_inside",
-    item_in: Array(9).fill({ item: "create:tree_fertilizer" }),
-    block_in: { blocks: ["water"] },
-    post: [
-      { type: "drop_item", item: "farmersdelight:organic_compost" },
-      { type: "place", block: "minecraft:air" },
-    ],
-  })
+  createRecipe(
+    event,
+    Array(9).fill({ item: "create:tree_fertilizer" }),
+    { blocks: ["water"] },
+    "farmersdelight:organic_compost",
+    "minecraft:air"
+  )
 })
