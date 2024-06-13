@@ -5,7 +5,6 @@ ServerEvents.recipes((event) => {
   // 物品ID移除配方
   const outputRemoved = [
     'minecraft:cobblestone',
-    'tconstruct:tables/crafting_station_from_logs',
   ]
   /**
    * @type {Array<Special.RecipeType>}
@@ -28,15 +27,23 @@ ServerEvents.recipes((event) => {
   const tagItemRemove = [
     '#forge:tools'
   ]
+  /**
+   * @type {Array<Special.RecipeId>}
+   */
+  const idItemRemove = [
+    'tconstruct:tables/crafting_station_from_logs'
+  ]
 
-  const remove = (removes, removerFunc) => {
-    removes.forEach(element => {
-      removerFunc(element)
+
+  const remove = (removes, removerFunction) => {
+    removes.forEach(removeAll => {
+      removerFunction(removeAll)
     })
   }
 
-  remove(outputRemoved, Id => event.remove({ output: Id }))
+  remove(outputRemoved, itemId => event.remove({ output: itemId }))
   remove(recipesType, Type => event.remove({ type: Type }))
   remove(modsRecipe, mod => event.remove({ mod: mod }))
-  remove(tagItemRemove,Tag => event.remove({output:Tag}))
+  remove(tagItemRemove, Tag => event.remove({ output: Tag }))
+  remove(idItemRemove, Id => event.remove({ id: Id }))
 })

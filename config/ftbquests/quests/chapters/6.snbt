@@ -277,17 +277,29 @@
 			dependencies: ["319655C6BDC516D6"]
 			id: "326ADB0DD0B97D4F"
 			subtitle: "&5<shake>没错，工作台打不开！"
-			tasks: [{
-				id: "3002B69CBF0A16F6"
-				item: {
-					Count: 1b
-					id: "tconstruct:crafting_station"
-					tag: {
-						texture: "minecraft:oak_log"
-					}
+			tasks: [
+				{
+					id: "487EF7B3AFC358BC"
+					item: "minecraft:crafting_table"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "58A5B05241809FCA"
+					item: "tconstruct:pattern"
+					type: "item"
+				}
+				{
+					id: "30EDD764C9AEEC81"
+					item: {
+						Count: 1b
+						id: "tconstruct:crafting_station"
+						tag: {
+							texture: "minecraft:oak_log"
+						}
+					}
+					type: "item"
+				}
+			]
 			x: -3.5d
 			y: 2.0d
 		}
