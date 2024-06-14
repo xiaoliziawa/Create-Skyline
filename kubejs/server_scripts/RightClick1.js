@@ -2,7 +2,6 @@ BlockEvents.rightClicked((event) => {
   const { player, hand, block, server, item } = event
   
   /**
- * 生成一个介于 min 和 max 之间的随机整数，包含 min 和 max
  * @param {number} min 最小值
  * @param {number} max 最大值
  * @returns {number} 随机整数
