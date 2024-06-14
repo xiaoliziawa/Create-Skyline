@@ -1,35 +1,19 @@
-<<<<<<< HEAD
-BlockEvents.rightClicked((event) => {
-  const { player, hand, block, server, item } = event
-
-  /**
- * @param {number} min 最小值
- * @param {number} max 最大值
- * @returns {number} 随机整数
- */
-
-  function randomRange(min, max) {
-    return Utils.random.nextInt(min, max + 1)
-  }
-
-=======
 function randomRange(min, max) {
   return Utils.random.nextInt(min, max + 1)
 }
 
 /**
- * 
- * @param {Special.Block} blockId 
- * @param {Special.Item} itemId 
- * @param {Special.Item} dropItemId 
- * @param {number} [random = 3]
- */
+*
+* @param {Special.Block} blockId
+* @param {Special.Item} itemId
+* @param {Special.Item} dropItemId
+* @param {number} [random = 3]
+*/
 const dropWithItemClicked = (blockId, itemId, dropItemId, random) => {
   if (random === undefined) random = 3;
->>>>>>> 2d00d3d7246e462a1667642cb9c4eb9e1aac5367
 
   BlockEvents.rightClicked(blockId, (event) => {
-    if(event.hand.name()!='MAIN_HAND') return;
+    if (event.hand.name() != 'MAIN_HAND') return;
     const { player, block } = event;
     if (
       player.mainHandItem.id == itemId &&
@@ -43,15 +27,15 @@ const dropWithItemClicked = (blockId, itemId, dropItemId, random) => {
 }
 
 /**
-   *
-   * @param {Special.Block} blockId 方块 ID
-   * @param {Special.Item} resultItem 掉落物品
-   * @param {number} random 掉落概率
-   */
+*
+* @param {Special.Block} blockId 方块 ID
+* @param {Special.Item} resultItem 掉落物品
+* @param {number} random 掉落概率
+*/
 function spawnItem1(blockId, resultItem, random) {
   BlockEvents.rightClicked(blockId, (event) => {
 
-    if(event.hand.name()!='MAIN_HAND') return;
+    if (event.hand.name() != 'MAIN_HAND') return;
     const { player, block } = event;
 
     if (player.isCrouching()) {
@@ -63,12 +47,12 @@ function spawnItem1(blockId, resultItem, random) {
 }
 
 /**
-   * @param {Special.Block} blockId 方块ID
-   * @param {Special.Item} resultItem 掉落物品
-   * @param {number} outputRandom 掉落概率
-   * @param {number} emptyRandom 方块消失概率
-   * @param {string} mainHandItem 需要手持的物品
-   */
+* @param {Special.Block} blockId 方块ID
+* @param {Special.Item} resultItem 掉落物品
+* @param {number} outputRandom 掉落概率
+* @param {number} emptyRandom 方块消失概率
+* @param {string} mainHandItem 需要手持的物品
+*/
 function spawnItem2(
   blockId,
   resultItem,
@@ -78,7 +62,7 @@ function spawnItem2(
 ) {
   BlockEvents.rightClicked(blockId, (event) => {
 
-    if(event.hand.name()!='MAIN_HAND') return;
+    if (event.hand.name() != 'MAIN_HAND') return;
     const { player, block } = event;
 
     if (
@@ -97,17 +81,17 @@ function spawnItem2(
 }
 
 /**
- *
- * @param {Special.Block} blockId 方块 ID
- * @param {Special.Item} resultItem 掉落物品
- * @param {Special.Item} itemId 物品 ID
- * @param {number} emptyRandom 方块消失概率
- * @param {Special.Item} mainHandItem 需要手持的物品
- */
+*
+* @param {Special.Block} blockId 方块 ID
+* @param {Special.Item} resultItem 掉落物品
+* @param {Special.Item} itemId 物品 ID
+* @param {number} emptyRandom 方块消失概率
+* @param {Special.Item} mainHandItem 需要手持的物品
+*/
 function spawnItem3(blockId, resultItem, itemId, outputRandom, emptyRandom) {
   BlockEvents.rightClicked(blockId, (event) => {
 
-    if(event.hand.name()!='MAIN_HAND') return;
+    if (event.hand.name() != 'MAIN_HAND') return;
     const { player, block } = event;
 
     if (player.mainHandItem.id === itemId) {
@@ -123,17 +107,17 @@ function spawnItem3(blockId, resultItem, itemId, outputRandom, emptyRandom) {
 }
 
 /**
-   * 
-   * @param {Special.Block} blockId 
-   * @param {Special.Item} resultItem 
-   * @param {number} customRandomMin 
-   * @param {number} customRandomMax 
-   * @param {number} customRandomNum 
-   */
+*
+* @param {Special.Block} blockId
+* @param {Special.Item} resultItem
+* @param {number} customRandomMin
+* @param {number} customRandomMax
+* @param {number} customRandomNum
+*/
 function customRandomItemSpawn(blockId, resultItem, customRandomMin, customRandomMax, customRandomNum) {
   BlockEvents.rightClicked(blockId, (event) => {
 
-    if(event.hand.name()!='MAIN_HAND') return;
+    if (event.hand.name() != 'MAIN_HAND') return;
     const { block } = event;
 
     if (randomRange(customRandomMin, customRandomMax) < customRandomNum) {
@@ -154,27 +138,11 @@ function customRandomItemSpawn(blockId, resultItem, customRandomMin, customRando
 // }
 dropWithItemClicked('minecraft:dirt', 'minecraft:bone_meal', 'exnihilosequentia:grass_seeds');
 
-<<<<<<< HEAD
-  // 一重压缩圆石 => 砂砾
-  spawnItem1(
-    'compressed:cobblestone_i',
-    'minecraft:gravel',
-    0.2)
-
-  // 凝灰岩 => 安山石子  
-  customRandomItemSpawn(
-    'minecraft:tuff',
-    'exnihilosequentia:andesite_pebble',
-    1,
-    10,
-    3)
-=======
 // 基岩 => 石子
 spawnItem1(
   'minecraft:bedrock',
   'kubejs:stone_grain',
   0.4)
->>>>>>> 2d00d3d7246e462a1667642cb9c4eb9e1aac5367
 
 // 一重压缩圆石 => 砂砾
 spawnItem1(
@@ -182,7 +150,7 @@ spawnItem1(
   'minecraft:gravel',
   0.2)
 
-// 凝灰岩 => 安山石子  
+// 凝灰岩 => 安山石子
 customRandomItemSpawn(
   'minecraft:tuff',
   'exnihilosequentia:andesite_pebble',
@@ -190,19 +158,6 @@ customRandomItemSpawn(
   10,
   3)
 
-<<<<<<< HEAD
-  // 骨粉右键泥土掉落草籽
-  if (
-    player.mainHandItem.id == 'minecraft:bone_meal' &&
-    block.id == 'minecraft:dirt' &&
-    randomRange(1, 10) < 3
-  ) {
-    player.mainHandItem.count--
-    block.popItem('exnihilosequentia:grass_seeds')
-    block.set('air')
-  }
-})
-=======
 // 泥土 => 树木肥料
 spawnItem2(
   'minecraft:dirt',
@@ -220,4 +175,3 @@ spawnItem3(
   0.12,
   0.1
 )
->>>>>>> 2d00d3d7246e462a1667642cb9c4eb9e1aac5367
