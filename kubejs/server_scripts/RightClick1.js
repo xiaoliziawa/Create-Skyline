@@ -1,16 +1,16 @@
 BlockEvents.rightClicked((event) => {
   const { player, hand, block, server, item } = event
-  
+
   /**
  * @param {number} min 最小值
  * @param {number} max 最大值
  * @returns {number} 随机整数
  */
-  
+
   function randomRange(min, max) {
     return Utils.random.nextInt(min, max + 1)
   }
-  
+
 
   if (hand.name() !== 'MAIN_HAND') return
 
@@ -103,7 +103,7 @@ BlockEvents.rightClicked((event) => {
     'compressed:cobblestone_i',
     'minecraft:gravel',
     0.2)
-  
+
   // 凝灰岩 => 安山石子  
   customRandomItemSpawn(
     'minecraft:tuff',
@@ -132,9 +132,9 @@ BlockEvents.rightClicked((event) => {
 
   // 骨粉右键泥土掉落草籽
   if (
-    player.mainHandItem.id == 'minecraft:bone_meal' && 
+    player.mainHandItem.id == 'minecraft:bone_meal' &&
     block.id == 'minecraft:dirt' &&
-    randomRange(1,10) < 3
+    randomRange(1, 10) < 3
   ) {
     player.mainHandItem.count--
     block.popItem('exnihilosequentia:grass_seeds')

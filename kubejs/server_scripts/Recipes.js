@@ -12,8 +12,8 @@ ServerEvents.recipes((event) => {
     'kubejs:stone_rod',
     ['A  ', 'A  '],
     {
-    A: '#forge:cobblestone',
-  })
+      A: '#forge:cobblestone',
+    })
 
   // 泥土
   kubejs.shapeless(
@@ -38,6 +38,16 @@ ServerEvents.recipes((event) => {
     {
       A: 'create:andesite_alloy',
       B: '#forge:stripped_logs',
+    }
+  )
+
+  // 工作盆
+  kubejs.shaped(
+    'create:basin',
+    ['A A', 'B B', 'ABA'],
+    {
+      A: 'create:andesite_alloy',
+      B: 'minecraft:tuff'
     }
   )
 })

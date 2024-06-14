@@ -5,7 +5,8 @@ ServerEvents.recipes((event) => {
   // 物品ID移除配方
   const outputRemoved = [
     'minecraft:cobblestone',
-    'create:andesite_casing'
+    'create:andesite_casing',
+    'create:basin'
   ]
   /**
    * @type {Array<Special.RecipeType>}

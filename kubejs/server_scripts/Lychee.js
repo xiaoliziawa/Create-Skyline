@@ -26,7 +26,7 @@ ServerEvents.recipes((event) => {
     event,
     { item: 'bucket' },
     { blocks: ['water'] },
-    'minecraft:water_bucket', 
+    'minecraft:water_bucket',
     'minecraft:air'
   )
 
