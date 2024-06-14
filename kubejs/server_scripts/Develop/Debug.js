@@ -8,11 +8,11 @@ ItemEvents.rightClicked((e) => {
 
   if (!mainHandItem.empty) {
     if (mainHandItem.id === id && player.isCrouching()) {
-      player.runCommandSilent("kubejs hand")
+      player.runCommandSilent('kubejs hand')
     }
 
-    if (mainHandItem === "minecraft:diamond") {
-      server.runCommand("reload")
+    if (mainHandItem === 'minecraft:diamond') {
+      server.runCommand('reload')
     }
   }
 })

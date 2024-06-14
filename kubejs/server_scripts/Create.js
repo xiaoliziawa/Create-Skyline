@@ -1,3 +1,12 @@
 ServerEvents.recipes((event) => {
-    event.recipes.create.mixing('minecraft:diamond','minecraft:coal').heatLevel('TEST')
+    const { create } = event.recipes
+    create.mixing(
+        'minecraft:diamond',
+        'minecraft:coal'
+    ).heatLevel('TEST')
+    
+    create.splashing(
+        'minecraft:tuff',
+        'minecraft:cobblestone'
+    ).processingTime(10)
 })

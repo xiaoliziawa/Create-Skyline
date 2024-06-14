@@ -348,6 +348,115 @@
 			x: -2.5d
 			y: 3.0d
 		}
+		{
+			dependencies: ["326ADB0DD0B97D4F"]
+			id: "6A91A67558617250"
+			tasks: [{
+				id: "1D914A6F312A0A63"
+				item: "minecraft:tuff"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6A91A67558617250"]
+			id: "07B587556971F953"
+			tasks: [{
+				id: "6E313F2476C0FFFE"
+				item: "exnihilosequentia:andesite_pebble"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["07B587556971F953"]
+			id: "2E76E7C2646DC29D"
+			tasks: [{
+				id: "12126B292A2049F5"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: 0.4870721726190368d
+			y: 3.2166666666666472d
+		}
+		{
+			dependencies: [
+				"78BA640E6BAD8D8F"
+				"0D532DD07A461043"
+				"332A9B152A79F0EA"
+			]
+			id: "5B869E237D8865F4"
+			tasks: [{
+				id: "1EC37CDC17601936"
+				item: {
+					Count: 1b
+					id: "tconstruct:hand_axe"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:wood"
+							"tconstruct:wood"
+							"tconstruct:wood"
+						]
+						tic_modifiers: [
+							{
+								level: 3
+								name: "tconstruct:cultivated"
+							}
+							{
+								level: 1
+								name: "tconstruct:stripping"
+							}
+						]
+						tic_persistent: { }
+						tic_stats: {
+							"tconstruct:attack_damage": 6.0f
+							"tconstruct:attack_speed": 0.9f
+							"tconstruct:durability": 60.0f
+							"tconstruct:mining_speed": 2.0f
+						}
+						tic_volatile_data: {
+							abilities: 1
+							upgrades: 3
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5B869E237D8865F4"]
+			id: "6F3873DDF03D97E1"
+			tasks: [{
+				id: "3681C639496481AB"
+				item: "minecraft:stripped_oak_log"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"2E76E7C2646DC29D"
+				"6F3873DDF03D97E1"
+			]
+			id: "20F967894B3B5FA8"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "<shake><rainb>标准结局~"
+			tasks: [{
+				id: "0B8B561D298CF479"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			x: 1.0823102678571246d
+			y: 5.145238095238078d
+		}
 	]
-	title: "&6开端"
+	title: "<rainb>开端"
 }
