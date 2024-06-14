@@ -77,14 +77,41 @@ BlockEvents.rightClicked((event) => {
     }
   }
 
+  /**
+   * 
+   * @param {Special.Block} blockId 
+   * @param {Special.Item} resultItem 
+   * @param {number} customRandomMin 
+   * @param {number} customRandomMax 
+   * @param {number} customRandomNum 
+   */
+  function customRandomItemSpawn(blockId, resultItem, customRandomMin, customRandomMax, customRandomNum) {
+    if (block.id === blockId) {
+      if (randomRange(customRandomMin, customRandomMax) < customRandomNum) {
+        block.popItemFromFace(resultItem, 'up')
+      }
+    }
+  }
+
   // 基岩 => 石子
-  spawnItem1('minecraft:bedrock', 'kubejs:stone_grain', 0.4)
+  spawnItem1(
+    'minecraft:bedrock',
+    'kubejs:stone_grain',
+    0.4)
 
   // 一重压缩圆石 => 砂砾
-  spawnItem1('compressed:cobblestone_i', 'minecraft:gravel', 0.2)
+  spawnItem1(
+    'compressed:cobblestone_i',
+    'minecraft:gravel',
+    0.2)
   
-  // 凝灰岩 => 安山石子
-  spawnItem1('minecraft:tuff','exnihilosequentia:andesite_pebble',randomRange(1,10) < 3)
+  // 凝灰岩 => 安山石子  
+  customRandomItemSpawn(
+    'minecraft:tuff',
+    'exnihilosequentia:andesite_pebble',
+    1,
+    10,
+    3)
 
   // 泥土 => 树木肥料
   spawnItem2(
