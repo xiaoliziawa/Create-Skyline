@@ -1,5 +1,7 @@
 # 2024/6/15
->FTBQ任务增添。
+>`FTB Quests`任务增添。
+
+>删除了`Create Metallurgy`模组,采用`TCon2`模组
 
 >`Recipes.js`更改
 
@@ -9,6 +11,8 @@
 >`Startup`文件夹内容新增`Create Heat JS`内容
 
 >添加了一个关于`Create Heat JS`模组的示例文件
+
+>`TriggerEvents`文件夹在**Github**合并
 
 # 2024/6/11
 > 再一次修改了`Remove.js`以及`Lychee.js`文件内容。

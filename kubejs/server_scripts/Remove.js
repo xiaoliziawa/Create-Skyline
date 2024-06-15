@@ -41,8 +41,8 @@ ServerEvents.recipes((event) => {
   };
 
   remove(outputRemoved, itemId => event.remove({ output: itemId }));
-  remove(recipesType, type => event.remove({ type }));
-  remove(modsRecipe, mod => event.remove({ mod }));
+  remove(recipesType, type => event.remove({ type: type }));
+  remove(modsRecipe, mod => event.remove({ mod: mod }));
   remove(tagItemRemove, tag => event.remove({ output: tag }));
-  remove(idItemRemove, id => event.remove({ id }));
+  remove(idItemRemove, id => event.remove({ id: id }));
 });

@@ -7,38 +7,17 @@
 	id: "22A7A25ADDD424EB"
 	order_index: 1
 	quest_links: [ ]
-	quests: [
-		{
-			dependencies: ["20F967894B3B5FA8"]
-			id: "03995CAC8C3F26F6"
-			size: 2.5d
-			tasks: [{
-				id: "576961210648B9D7"
-				item: "create:andesite_casing"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["03995CAC8C3F26F6"]
-			id: "47D11B389B3F27DD"
-			tasks: [
-				{
-					id: "140CAA35E9183EB6"
-					item: "create:mechanical_mixer"
-					type: "item"
-				}
-				{
-					id: "514C17C79A3281B9"
-					item: "create:basin"
-					type: "item"
-				}
-			]
-			title: "&4安山合金的量产"
-			x: -2.5d
-			y: 1.0d
-		}
-	]
+	quests: [{
+		dependencies: ["20F967894B3B5FA8"]
+		id: "03995CAC8C3F26F6"
+		size: 2.5d
+		tasks: [{
+			id: "576961210648B9D7"
+			item: "create:andesite_casing"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 1.0d
+	}]
 	title: "&4Create 机械动力"
 }
