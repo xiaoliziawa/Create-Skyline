@@ -13,13 +13,11 @@ ServerEvents.recipes(event => {
 
     function castingTable(type,ItemID, consumed, times, needFluidAmount,type2, fluidId, resultItem) {
         let castObject = {}
-
         castObject[type] = ItemID 
 
         let fluidObject = {
             "amount": needFluidAmount
         }
-
         fluidObject[type2] = fluidId
 
         event.custom({
@@ -46,13 +44,11 @@ ServerEvents.recipes(event => {
      */
     function castingBasin(type, Input, consumed, times, needFluidAmount, type2, fluidId, resultItem) {
         let castObject = {}
-
         castObject[type] = Input
     
         let fluidObject = {
             "amount": needFluidAmount
         }
-
         fluidObject[type2] = fluidId
     
         event.custom({
