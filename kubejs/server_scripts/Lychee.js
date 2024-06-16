@@ -2,13 +2,13 @@
 
 ServerEvents.recipes((event) => {
   /**
-   * 
-   * @param {event} event 传入事件
-   * @param {{item:Special.Item}} item_in 需要扔出的物品
-   * @param {{blocks:Array<Special.Block>}} block_in 扔出物品进入的方块
-   * @param {Special.Item} drop_item 输出物品
-   * @param {Special.Block} place_block 替换原方块的方块
-  */
+* 
+* @param {event} event 传入事件
+* @param {{item:Special.Item}} item_in 需要扔出的物品
+* @param {{blocks:Array<Special.Block>}} block_in 扔出物品进入的方块
+* @param {Special.Item} drop_item 输出物品
+* @param {Special.Block} place_block 替换原方块的方块
+*/
   // Lychee Item_In event function
   function createRecipe(event, item_in, block_in, drop_item, place_block) {
     event.custom({

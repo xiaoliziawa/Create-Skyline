@@ -11,9 +11,9 @@ ServerEvents.recipes(event => {
          * @param {string} type2 Fluidtype: tag or fluid
          */
 
-    function castingTable(type,ItemID, consumed, times, needFluidAmount,type2, fluidId, resultItem) {
+    function castingTable(type, ItemID, consumed, times, needFluidAmount, type2, fluidId, resultItem) {
         let castObject = {}
-        castObject[type] = ItemID 
+        castObject[type] = ItemID
 
         let fluidObject = {
             "amount": needFluidAmount
@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
             "switch_slots": true
         })
     }
-    
+
     /**
      * 
      * @param {Special.Item|Special.ItemTag} Input InputItem
@@ -45,12 +45,12 @@ ServerEvents.recipes(event => {
     function castingBasin(type, Input, consumed, times, needFluidAmount, type2, fluidId, resultItem) {
         let castObject = {}
         castObject[type] = Input
-    
+
         let fluidObject = {
             "amount": needFluidAmount
         }
         fluidObject[type2] = fluidId
-    
+
         event.custom({
             "type": "tconstruct:retextured_casting_basin",
             "cast": castObject,
@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
             "result": resultItem
         })
     }
-    
+
     // 空白沙子模具
     castingTable(
         "item",
@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
         'tconstruct:blank_sand_cast',
     )
     // 铁板
-    castingTable(
+        castingTable(
         "item",
         'tconstruct:plate_sand_cast',
         true,
