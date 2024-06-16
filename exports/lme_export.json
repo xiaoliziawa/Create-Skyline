@@ -195,6 +195,11 @@
     "version": "1.19.2-4.2.22"
   },
   {
+    "modid": "ding",
+    "name": "Ding",
+    "version": "1.4.1"
+  },
+  {
     "modid": "mmt",
     "name": "More Materials",
     "version": "0.2a-1.19.2-morematerials"

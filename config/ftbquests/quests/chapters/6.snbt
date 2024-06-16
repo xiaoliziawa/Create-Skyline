@@ -10,6 +10,13 @@
 	quests: [
 		{
 			id: "4BB6902F1AEA64C6"
+			rewards: [{
+				command: "/give @a minecraft:player_head{SkullOwner:\"TYX_CnJiu\"}"
+				icon: "minecraft:dropper"
+				id: "19B77CEE60362C6C"
+				title: "作者の头"
+				type: "command"
+			}]
 			size: 2.5d
 			tasks: [{
 				id: "11353D9F4A2984CC"
@@ -478,7 +485,7 @@
 			dependencies: ["3F9B42593AFACF31"]
 			id: "75F72F08BF6EB750"
 			tasks: [{
-				count: 24L
+				count: 27L
 				id: "0679F3D8441D93A8"
 				item: "tconstruct:seared_brick"
 				type: "item"
@@ -505,33 +512,43 @@
 					item: "tconstruct:seared_table"
 					type: "item"
 				}
+				{
+					id: "5A814DACFA8B9DCE"
+					item: "tconstruct:seared_faucet"
+					type: "item"
+				}
 			]
 			x: 2.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["78BA640E6BAD8D8F"]
-			id: "1EE270E0D734D085"
-			tasks: [{
-				id: "300AB41C645DDFE2"
-				item: "tconstruct:plate_sand_cast"
-				type: "item"
-			}]
-			x: -6.0d
-			y: 3.0d
+			dependencies: ["65BFEFE07E5661A6"]
+			id: "24007DDC9E4B2E02"
+			tasks: [
+				{
+					id: "37AC33A9317F7C7A"
+					item: "tconstruct:blank_sand_cast"
+					type: "item"
+				}
+				{
+					id: "356A60B644A8FEC7"
+					item: "tconstruct:plate_sand_cast"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["1EE270E0D734D085"]
-			id: "5F988E410EEA16AE"
-			subtitle: "&5<rainb>第一块板！"
+			dependencies: ["24007DDC9E4B2E02"]
+			id: "46DCFAD0868144E1"
 			tasks: [{
-				count: 16L
-				id: "6D46F6591A98DF2D"
+				id: "2EA91CC71606A1E4"
 				item: "create:iron_sheet"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 3.0d
+			x: 2.0d
+			y: 3.2535714285714192d
 		}
 	]
 	title: "<rainb>开端"

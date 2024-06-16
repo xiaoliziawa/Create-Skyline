@@ -6,6 +6,8 @@ ServerEvents.recipes((event) => {
     'minecraft:cobblestone',
     'create:andesite_casing',
     'create:basin',
+    'create:iron_sheet',
+    'tconstruct:blank_sand_cast'
   ];
 
   /**
@@ -34,11 +36,12 @@ ServerEvents.recipes((event) => {
    */
   const idItemRemove = [
     'tconstruct:tables/crafting_station_from_logs',
+    'tconstruct:smeltery/casts/sand/builder_block/plates'
   ];
 
   const remove = (items, removerFunction) => {
     items.forEach(removerFunction);
-  };
+  };  
 
   remove(outputRemoved, itemId => event.remove({ output: itemId }));
   remove(recipesType, type => event.remove({ type: type }));
