@@ -388,44 +388,41 @@
 				"332A9B152A79F0EA"
 			]
 			id: "5B869E237D8865F4"
-			tasks: [{
-				id: "1EC37CDC17601936"
-				item: {
-					Count: 1b
-					id: "tconstruct:hand_axe"
-					tag: {
-						Damage: 0
-						tic_broken: 0b
-						tic_materials: [
-							"tconstruct:wood"
-							"tconstruct:wood"
-							"tconstruct:wood"
-						]
-						tic_modifiers: [
-							{
-								level: 3
-								name: "tconstruct:cultivated"
-							}
-							{
-								level: 1
-								name: "tconstruct:stripping"
-							}
-						]
-						tic_persistent: { }
-						tic_stats: {
-							"tconstruct:attack_damage": 6.0f
-							"tconstruct:attack_speed": 0.9f
-							"tconstruct:durability": 60.0f
-							"tconstruct:mining_speed": 2.0f
-						}
-						tic_volatile_data: {
-							abilities: 1
-							upgrades: 3
+			tasks: [
+				{
+					id: "4482D7F637F1C569"
+					item: {
+						Count: 1b
+						id: "tconstruct:tool_binding"
+						tag: {
+							Material: "tconstruct:wood"
 						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "7FCAF26B5A13194F"
+					item: {
+						Count: 1b
+						id: "tconstruct:tool_handle"
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7D5DDD8B7E4342C3"
+					item: {
+						Count: 1b
+						id: "tconstruct:small_axe_head"
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+					type: "item"
+				}
+			]
 			x: -3.5d
 			y: 4.5d
 		}

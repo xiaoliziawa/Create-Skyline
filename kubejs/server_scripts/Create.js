@@ -8,5 +8,5 @@ ServerEvents.recipes((event) => {
     create.splashing(
         'minecraft:tuff',
         'minecraft:cobblestone'
-    ).processingTime(10)
+    ).processingTime(10)    
 })

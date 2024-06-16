@@ -216,5 +216,4 @@ minecraft:warped_forest_vegetation_bonemeal
 minecraft:warped_fungus
 minecraft:warped_fungus_planted
 minecraft:weeping_vines
-createmetallurgy:wolframite_ore
 create:zinc_ore
