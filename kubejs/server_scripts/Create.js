@@ -5,12 +5,12 @@ ServerEvents.recipes((event) => {
         'minecraft:diamond',
         'minecraft:coal'
     ).heatLevel('TEST')
-    
+
     // 凝灰岩
     create.splashing(
         'minecraft:tuff',
         'minecraft:cobblestone'
-    ).processingTime(10)    
+    ).processingTime(10)
 
     // 铁板修复
     create.pressing(

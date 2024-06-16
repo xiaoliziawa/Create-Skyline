@@ -41,7 +41,7 @@ ServerEvents.recipes((event) => {
 
   const remove = (items, removerFunction) => {
     items.forEach(removerFunction);
-  };  
+  };
 
   remove(outputRemoved, itemId => event.remove({ output: itemId }));
   remove(recipesType, type => event.remove({ type: type }));
