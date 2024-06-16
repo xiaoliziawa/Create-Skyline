@@ -2,33 +2,33 @@ ServerEvents.recipes(event => {
     /**
          * 
          * @param {Special.Item|Special.ItemTag} ItemID ItemsId
-         * @param {boolean} Consumed true or false
-         * @param {number} Times number
-         * @param {number} NeedFluidAmount FluidAmount
-         * @param {Special.Fluid|Special.FluidTag} FluidId FluidId
-         * @param {Special.Item} ResultItem ResultItems
-         * @param {string} Type ItemType: tag or item
-         * @param {string} Type2 FluidType: tag or fluid
+         * @param {boolean} consumed true or false
+         * @param {number} times number
+         * @param {number} needFluidAmount FluidAmount
+         * @param {Special.Fluid|Special.FluidTag} fluidId fluidId
+         * @param {Special.Item} resultItem resultItems
+         * @param {string} type Itemtype: tag or item
+         * @param {string} type2 Fluidtype: tag or fluid
          */
 
-    function castingTable(Type,ItemID, Consumed, Times, NeedFluidAmount,Type2, FluidId, ResultItem) {
+    function castingTable(type,ItemID, consumed, times, needFluidAmount,type2, fluidId, resultItem) {
         let castObject = {}
 
-        castObject[Type] = ItemID 
+        castObject[type] = ItemID 
 
         let fluidObject = {
-            "amount": NeedFluidAmount
+            "amount": needFluidAmount
         }
 
-        fluidObject[Type2] = FluidId
+        fluidObject[type2] = fluidId
 
         event.custom({
             "type": "tconstruct:casting_table",
             "cast": castObject,
-            "cast_consumed": Consumed,
-            "cooling_time": Times,
+            "cast_consumed": consumed,
+            "cooling_time": times,
             "fluid": fluidObject,
-            "result": ResultItem,
+            "result": resultItem,
             "switch_slots": true
         })
     }
@@ -36,32 +36,32 @@ ServerEvents.recipes(event => {
     /**
      * 
      * @param {Special.Item|Special.ItemTag} Input InputItem
-     * @param {Boolean} Consumed true or false
-     * @param {number} Times Need Times
-     * @param {number} NeedFluidAmount FluidAmount
-     * @param {Special.Fluid|Special.FluidTag} FluidId FluidId
-     * @param {Special.Item} ResultItem ResultItems
-     * @param {string} Type ItemType: tag or item
-     * @param {string} Type2 FluidType: tag or fluid
+     * @param {Boolean} consumed true or false
+     * @param {number} times Need times
+     * @param {number} needFluidAmount FluidAmount
+     * @param {Special.Fluid|Special.FluidTag} fluidId fluidId
+     * @param {Special.Item} resultItem resultItems
+     * @param {string} type Itemtype: tag or item
+     * @param {string} type2 Fluidtype: tag or fluid
      */
-    function castingBasin(Type, Input, Consumed, Times, NeedFluidAmount, Type2, FluidId, ResultItem) {
+    function castingBasin(type, Input, consumed, times, needFluidAmount, type2, fluidId, resultItem) {
         let castObject = {}
 
-        castObject[Type] = Input
+        castObject[type] = Input
     
         let fluidObject = {
-            "amount": NeedFluidAmount
+            "amount": needFluidAmount
         }
 
-        fluidObject[Type2] = FluidId
+        fluidObject[type2] = fluidId
     
         event.custom({
             "type": "tconstruct:retextured_casting_basin",
             "cast": castObject,
-            "cast_consumed": Consumed,
-            "cooling_time": Times,
+            "cast_consumed": consumed,
+            "cooling_time": times,
             "fluid": fluidObject,
-            "result": ResultItem
+            "result": resultItem
         })
     }
     
