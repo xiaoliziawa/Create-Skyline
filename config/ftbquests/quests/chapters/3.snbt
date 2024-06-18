@@ -7,16 +7,230 @@
 	id: "060D2C6B8DE1733E"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["20F967894B3B5FA8"]
-		id: "2710F98D6B58BED6"
-		tasks: [{
-			id: "7BB0A2E032430E14"
-			item: "create:andesite_casing"
-			type: "item"
-		}]
-		x: -5.0d
-		y: 0.5d
-	}]
-	title: "&3安山合金的量产"
+	quests: [
+		{
+			dependencies: ["20F967894B3B5FA8"]
+			id: "2710F98D6B58BED6"
+			tasks: [{
+				id: "7BB0A2E032430E14"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2710F98D6B58BED6"]
+			id: "1371FA24B34C9057"
+			tasks: [
+				{
+					id: "3A1C384FDBFF0E0F"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "3B13E5521A6115C1"
+					item: "create:basin"
+					type: "item"
+				}
+			]
+			x: -7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1371FA24B34C9057"]
+			id: "40AEE132C5B9F1E7"
+			tasks: [{
+				id: "396F50D9160E194E"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4B77D0AA1E1D1AB3"]
+			id: "175359D49E996D1C"
+			tasks: [{
+				id: "03010F9FA2034D8B"
+				item: "create:millstone"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"312604F05EF557D7"
+				"40AEE132C5B9F1E7"
+			]
+			id: "4B77D0AA1E1D1AB3"
+			tasks: [{
+				id: "5B2C309D59417B35"
+				item: "minecraft:granite"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["175359D49E996D1C"]
+			id: "5D790997829FB021"
+			tasks: [{
+				id: "234F4AD5BA336B72"
+				item: "minecraft:red_sand"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2710F98D6B58BED6"]
+			id: "57BEA1E738EF7575"
+			subtitle: "<shake>多一台鼓风机也不过分吧"
+			tasks: [
+				{
+					id: "0ADC9100703E7FBE"
+					item: "create:encased_fan"
+					type: "item"
+				}
+				{
+					id: "7E68684AB4369AE9"
+					item: "create:water_wheel"
+					type: "item"
+				}
+			]
+			x: -7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"57BEA1E738EF7575"
+				"7ED5CA8343542A85"
+			]
+			id: "312604F05EF557D7"
+			tasks: [
+				{
+					id: "099EE3FFC625B36E"
+					item: "create:spout"
+					type: "item"
+				}
+				{
+					id: "10E536FC1F5406BF"
+					item: "flopper:flopper"
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["57BEA1E738EF7575"]
+			id: "2AE129829C3A47A6"
+			tasks: [{
+				id: "7A6596FE06442483"
+				item: "minecraft:kelp"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2AE129829C3A47A6"]
+			id: "7ED5CA8343542A85"
+			tasks: [{
+				id: "364F1AC1DEB91F9A"
+				item: "minecraft:dried_kelp"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5D790997829FB021"]
+			id: "6F732B7A763E0A80"
+			tasks: [{
+				id: "67716F562D164178"
+				item: "tconstruct:ingot_cast"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["40AEE132C5B9F1E7"]
+			id: "6C5A1C60C83FA8F4"
+			tasks: [{
+				id: "3D8442F5BBE9CAF9"
+				item: "kubejs:andesite_fluid_bucket"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"6C5A1C60C83FA8F4"
+				"6F732B7A763E0A80"
+			]
+			id: "73245EA5A0CCDE6F"
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				id: "4E9EA773E905405C"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2710F98D6B58BED6"]
+			id: "04CC5AA43C8E594D"
+			tasks: [
+				{
+					id: "642A3C9B606B0C83"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+				{
+					id: "54A35DF7DAB75FC2"
+					item: "create:depot"
+					type: "item"
+				}
+			]
+			x: -8.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["04CC5AA43C8E594D"]
+			id: "781254E262865103"
+			tasks: [
+				{
+					id: "4D9DE9A0D902CA53"
+					item: "create:mechanical_pump"
+					type: "item"
+				}
+				{
+					id: "67B69A4A9BCCCB3D"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["781254E262865103"]
+			id: "4921BAF36080007E"
+			tasks: [{
+				id: "180BCE884DFFCDFB"
+				item: "create:fluid_tank"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.5d
+		}
+	]
+	title: "&6安山合金的量产"
 }

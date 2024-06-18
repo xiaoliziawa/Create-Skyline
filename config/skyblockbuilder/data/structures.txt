@@ -1,8 +1,12 @@
 minecraft:ancient_city
 minecraft:bastion_remnant
+tconstruct:blood_island
 minecraft:buried_treasure
+tconstruct:clay_island
 minecraft:desert_pyramid
+tconstruct:earth_slime_island
 minecraft:end_city
+tconstruct:end_slime_island
 minecraft:fortress
 minecraft:igloo
 minecraft:jungle_pyramid
@@ -23,6 +27,7 @@ minecraft:ruined_portal_ocean
 minecraft:ruined_portal_swamp
 minecraft:shipwreck
 minecraft:shipwreck_beached
+tconstruct:sky_slime_island
 minecraft:stronghold
 minecraft:swamp_hut
 minecraft:village_desert

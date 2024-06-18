@@ -83,4 +83,15 @@ ServerEvents.recipes(event => {
         'tconstruct:molten_iron',
         'create:iron_sheet'
     )
+    // 安山合金
+    castingTable(
+        "item",
+        'tconstruct:ingot_cast',
+        false,
+        40,
+        50,
+        "fluid",
+        "kubejs:andesite_fluid",
+        'create:andesite_alloy'
+    )
 })

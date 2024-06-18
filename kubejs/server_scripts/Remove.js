@@ -7,7 +7,9 @@ ServerEvents.recipes((event) => {
     'create:andesite_casing',
     'create:basin',
     'create:iron_sheet',
-    'tconstruct:blank_sand_cast'
+    'tconstruct:blank_sand_cast',
+    'create:andesite_alloy',
+    'minecraft:granite',
   ];
 
   /**
@@ -15,6 +17,7 @@ ServerEvents.recipes((event) => {
    */
   const recipesType = [
     'exnihilosequentia:sieve',
+    'exnihilosequentia:crucible',
   ];
 
   /**
@@ -39,7 +42,8 @@ ServerEvents.recipes((event) => {
     'tconstruct:smeltery/casts/sand/builder_block/plates',
     'create:mixing/andesite_alloy_from_zinc',
     'create:mixing/andesite_alloy',
-    
+    'create:splashing/crushed_raw_copper',
+    'minecraft:kjs_create_andesite_alloy',
   ];
 
   const remove = (items, removerFunction) => {

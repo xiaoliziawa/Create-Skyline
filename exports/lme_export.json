@@ -1,5 +1,10 @@
 [
   {
+    "modid": "cyclopscore",
+    "name": "Cyclops Core",
+    "version": "1.19.1"
+  },
+  {
     "modid": "inventorysorter",
     "name": "Simple Inventory Sorter",
     "version": "22.0.0"
@@ -163,6 +168,11 @@
     "modid": "farmersdelight",
     "name": "Farmer\u0027s Delight",
     "version": "1.19.2-1.2.4"
+  },
+  {
+    "modid": "flopper",
+    "name": "Flopper",
+    "version": "1.1.5"
   },
   {
     "modid": "mousetweaks",

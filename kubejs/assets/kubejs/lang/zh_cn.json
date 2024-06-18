@@ -1,5 +1,11 @@
 {
   "item.kubejs.stone_grain": "石子",
   "item.kubejs.stone_rod": "石棍",
-  "create.recipe.heat_requirement.test": "泥土加热？"
+  "item.kubejs.andesite_fluid_bucket": "安山合金液桶",
+
+  "create.recipe.heat_requirement.fire": "融化",
+  
+  "block.kubejs.andesite_fluid": "安山合金液",
+
+  "fluid.kubejs.andesite_fluid": "安山合金液"
 }
