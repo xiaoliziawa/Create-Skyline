@@ -10,20 +10,20 @@ function randomRange(min, max) {
 * @param {number} [random = 3]
 */
 const dropWithItemClicked = (blockId, itemId, dropItemId, random) => {
-  if (random === undefined) random = 3;
+  if (random === undefined) random = 3
 
   BlockEvents.rightClicked(blockId, (event) => {
-    if (event.hand.name() != 'MAIN_HAND') return;
-    const { player, block } = event;
+    if (event.hand.name() != 'MAIN_HAND') return
+    const { player, block } = event
     if (
       player.mainHandItem.id == itemId &&
       randomRange(1, 10) < random
     ) {
-      player.mainHandItem.count--;
-      block.popItem(dropItemId);
-      block.set('air');
+      player.mainHandItem.count--
+      block.popItem(dropItemId)
+      block.set('air')
     }
-  });
+  })
 }
 
 /**
@@ -35,8 +35,8 @@ const dropWithItemClicked = (blockId, itemId, dropItemId, random) => {
 function spawnItem1(blockId, resultItem, random) {
   BlockEvents.rightClicked(blockId, (event) => {
 
-    if (event.hand.name() != 'MAIN_HAND') return;
-    const { player, block } = event;
+    if (event.hand.name() != 'MAIN_HAND') return
+    const { player, block } = event
 
     if (player.isCrouching()) {
       if (Math.random() < random) {
@@ -62,8 +62,8 @@ function spawnItem2(
 ) {
   BlockEvents.rightClicked(blockId, (event) => {
 
-    if (event.hand.name() != 'MAIN_HAND') return;
-    const { player, block } = event;
+    if (event.hand.name() != 'MAIN_HAND') return
+    const { player, block } = event
 
     if (
       block.id === blockId &&
@@ -77,7 +77,7 @@ function spawnItem2(
         block.set('air')
       }
     }
-  });
+  })
 }
 
 /**
@@ -91,8 +91,8 @@ function spawnItem2(
 function spawnItem3(blockId, resultItem, itemId, outputRandom, emptyRandom) {
   BlockEvents.rightClicked(blockId, (event) => {
 
-    if (event.hand.name() != 'MAIN_HAND') return;
-    const { player, block } = event;
+    if (event.hand.name() != 'MAIN_HAND') return
+    const { player, block } = event
 
     if (player.mainHandItem.id === itemId) {
       if (Math.random() < outputRandom) {
@@ -117,26 +117,19 @@ function spawnItem3(blockId, resultItem, itemId, outputRandom, emptyRandom) {
 function customRandomItemSpawn(blockId, resultItem, customRandomMin, customRandomMax, customRandomNum) {
   BlockEvents.rightClicked(blockId, (event) => {
 
-    if (event.hand.name() != 'MAIN_HAND') return;
-    const { block } = event;
+    if (event.hand.name() != 'MAIN_HAND') return
+    const { block } = event
 
     if (randomRange(customRandomMin, customRandomMax) < customRandomNum) {
       block.popItemFromFace(resultItem, 'up')
     }
-  });
+  })
 }
 
-// // 骨粉右键泥土掉落草籽
-// if (
-//   player.mainHandItem.id == 'minecraft:bone_meal' &&
-//   block.id == 'minecraft:dirt' &&
-//   randomRange(1, 10) < 3
-// ) {
-//   player.mainHandItem.count--
-//   block.popItem('exnihilosequentia:grass_seeds')
-//   block.set('air')
-// }
-dropWithItemClicked('minecraft:dirt', 'minecraft:bone_meal', 'exnihilosequentia:grass_seeds');
+dropWithItemClicked(
+  'minecraft:dirt',
+  'minecraft:bone_meal',
+  'exnihilosequentia:grass_seeds')
 
 // 基岩 => 石子
 spawnItem1(

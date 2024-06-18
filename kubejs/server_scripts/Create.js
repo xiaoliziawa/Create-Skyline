@@ -2,9 +2,9 @@ ServerEvents.recipes((event) => {
     const { create } = event.recipes
     // Create Heat JS 测试
     create.mixing(
-        'minecraft:diamond',
-        'minecraft:coal'
-    ).heatLevel('TEST')
+        Fluid.of('minecraft:lava',50),
+        'minecraft:cobblestone'
+    ).heatLevel('Fire')
 
     // 凝灰岩
     create.splashing(

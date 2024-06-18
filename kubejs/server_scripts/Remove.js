@@ -36,7 +36,10 @@ ServerEvents.recipes((event) => {
    */
   const idItemRemove = [
     'tconstruct:tables/crafting_station_from_logs',
-    'tconstruct:smeltery/casts/sand/builder_block/plates'
+    'tconstruct:smeltery/casts/sand/builder_block/plates',
+    'create:mixing/andesite_alloy_from_zinc',
+    'create:mixing/andesite_alloy',
+    
   ];
 
   const remove = (items, removerFunction) => {
