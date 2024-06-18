@@ -1,5 +1,13 @@
 # Changelog
 
+## 2024/6/18
+
+- 添加了新的模组`Flopper`
+- `FTB Quests`任务章节以及任务新增
+- `TCon.js`以及`Create.js`文件进行修改
+- 新增`Fluid.js`文件于**startup_script**文件夹
+- 修复了一点点Bug（
+
 ## 2024/6/16
 
 - `TCon.js`增添+修改(终极优化!)
