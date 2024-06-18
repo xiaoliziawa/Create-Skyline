@@ -129,19 +129,22 @@ function customRandomItemSpawn(blockId, resultItem, customRandomMin, customRando
 dropWithItemClicked(
   'minecraft:dirt',
   'minecraft:bone_meal',
-  'exnihilosequentia:grass_seeds')
+  'exnihilosequentia:grass_seeds'
+)
 
 // 基岩 => 石子
 spawnItem1(
   'minecraft:bedrock',
   'kubejs:stone_grain',
-  0.4)
+  0.4
+)
 
 // 一重压缩圆石 => 砂砾
 spawnItem1(
   'compressed:cobblestone_i',
   'minecraft:gravel',
-  0.2)
+  0.2
+)
 
 // 凝灰岩 => 安山石子
 customRandomItemSpawn(
@@ -149,7 +152,8 @@ customRandomItemSpawn(
   'exnihilosequentia:andesite_pebble',
   1,
   10,
-  3)
+  3
+)
 
 // 泥土 => 树木肥料
 spawnItem2(
