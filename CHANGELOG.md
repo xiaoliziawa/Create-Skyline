@@ -42,6 +42,10 @@
 - `JSON thing` 更改。
 - **More Crafting Table** 模组移除。
 
+## 2024/6/8
+
+- 由衷感谢[**EvanHsieh0415**](https://github.com/EvanHsieh0415),以及[**0xarch**](https://github.com/0xarch)大佬的贡献
+
 ## 2024/6/7
 
 - `exports` 模组列表。
