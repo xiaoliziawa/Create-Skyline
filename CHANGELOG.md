@@ -27,7 +27,7 @@
 - 引入新的模组`Create Heat JS`。
 - `Startup`文件夹内容新增`Create Heat JS`内容。
 - 添加了一个关于`Create Heat JS`模组的示例文件。
-- `TriggerEvents`文件夹在**Github**合并。
+- `TriggerEvents`文件夹在**Github**合并。感谢[**这位大佬的贡献**](https://github.com/0xarch)
 
 ## 2024/6/11
 
