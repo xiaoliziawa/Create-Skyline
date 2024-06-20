@@ -20,8 +20,7 @@ ServerEvents.recipes((event) => {
 
     // 安山合金液
     create.mixing(
-        Fluid.of('kubejs:andesite_fluid', 100),
-        [
+        Fluid.of('kubejs:andesite_fluid', 100),[
             'minecraft:iron_nugget',
             'minecraft:andesite',
             Fluid.of('minecraft:lava',50)
@@ -42,8 +41,7 @@ ServerEvents.recipes((event) => {
 
     // 闪长岩
     create.filling(
-        'minecraft:diorite',
-        [
+        'minecraft:diorite',[
             Fluid.of('minecraft:water', 500),
             'minecraft:cobblestone'
         ]
@@ -51,16 +49,14 @@ ServerEvents.recipes((event) => {
 
     // 花岗岩
     create.filling(
-        'minecraft:granite',
-        [
+        'minecraft:granite',[
             Fluid.of('minecraft:lava', 100),
             'minecraft:diorite'
         ]
     )
 
     // 沙子 ==> 黏土+铜粒
-    create.splashing(
-        [
+    create.splashing([
             Item.of('6x create:copper_nugget').withChance(0.3),
             Item.of('minecraft:clay_ball').withChance(0.4),
             Item.of('3x minecraft:clay_ball').withChance(0.3)
@@ -69,8 +65,7 @@ ServerEvents.recipes((event) => {
     )
 
     // 黏土 ==> 海带，海草，海泡菜
-    create.splashing(
-        [
+    create.splashing([
             Item.of('minecraft:kelp').withChance(0.3),
             Item.of('minecraft:seagrass').withChance(0.35),
             Item.of('minecraft:sea_pickle').withChance(0.35)

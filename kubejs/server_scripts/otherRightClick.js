@@ -39,7 +39,7 @@ BlockEvents.rightClicked((event) => {
   )
 
   // 取消工作台右键
-  if (block.id === 'minecraft:crafting_table') {
-    event.cancel()
-  }
+  // if (block.id === 'minecraft:crafting_table') {
+  //   event.cancel()
+  // }
 })
