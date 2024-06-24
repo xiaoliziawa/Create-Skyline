@@ -10,5 +10,6 @@ StartupEvents.registry('fluid', event => {
             .bucketColor(fluidColor)
     }
 
+    // 安山合金液
     customFluid('andesite_fluid',0xD3D3D3)
 })
