@@ -1,17 +1,21 @@
 {
-  "json.schemas": [
-    {
-      "fileMatch": ["/lang/*.json"],
-      "url": "./.vscode/probe.lang-schema.json"
-    },
-    {
-      "fileMatch": ["/probe/docs/*.json"],
-      "url": "./.vscode/probe.doc-schema.json"
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "/lang/*.json"
+            ],
+            "url": "./.vscode/probe.lang-schema.json"
+        },
+        {
+            "fileMatch": [
+                "/probe/docs/*.json"
+            ],
+            "url": "./.vscode/probe.doc-schema.json"
+        }
+    ],
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "CodeGPT.apiKey": "CodeGPT Plus Beta",
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     }
-  ],
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "CodeGPT.apiKey": "CodeGPT Plus Beta",
-  "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  }
 }
