@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"D  ",
+		" D ",
+		"  P"
+	],
+	"key": {
+		"D": {
+			"item": "minecraft:diamond"
+		},
+		"S": {
+			"item": "minecraft:stick"
+		}
+	},
+	"result": {
+		"item": "minecraft:diamond_sword",
+		"count": 1
+	}
+}
