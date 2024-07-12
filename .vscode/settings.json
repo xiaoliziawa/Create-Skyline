@@ -17,5 +17,8 @@
     "CodeGPT.apiKey": "CodeGPT Plus Beta",
     "[javascript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "aide.convertLanguagePairs": {
+        "javascript": "java"
     }
 }
