@@ -1,97 +1,70 @@
 ServerEvents.recipes(event => {
     /**
-         * 
-         * @param {Special.Item|Special.ItemTag} ItemID ItemsId
-         * @param {boolean} consumed true or false
-         * @param {number} times number
-         * @param {number} needFluidAmount FluidAmount
-         * @param {Special.Fluid|Special.FluidTag} fluidId fluidId
-         * @param {Special.Item} resultItem resultItems
-         * @param {string} type Itemtype: tag or item
-         * @param {string} type2 Fluidtype: tag or fluid
-         */
-
-    function castingTable(type, ItemID, consumed, times, needFluidAmount, type2, fluidId, resultItem) {
-        let castObject = {}
-        castObject[type] = ItemID
-
-        let fluidObject = {
-            "amount": needFluidAmount
-        }
-        fluidObject[type2] = fluidId
-
-        event.custom({
-            "type": "tconstruct:casting_table",
-            "cast": castObject,
-            "cast_consumed": consumed,
-            "cooling_time": times,
-            "fluid": fluidObject,
-            "result": resultItem,
-            "switch_slots": true
-        })
-    }
-
-    /**
-     * 
-     * @param {Special.Item|Special.ItemTag} Input InputItem
-     * @param {Boolean} consumed true or false
-     * @param {number} times Need times
-     * @param {number} needFluidAmount FluidAmount
-     * @param {Special.Fluid|Special.FluidTag} fluidId fluidId
-     * @param {Special.Item} resultItem resultItems
-     * @param {string} type Itemtype: tag or item
-     * @param {string} type2 Fluidtype: tag or fluid
+     * @param {Object} options - The options for casting
+     * @param {string} options.type - Itemtype: 'tag' or 'item'
+     * @param {Special.Item|Special.ItemTag} options.itemId - ItemsId
+     * @param {boolean} options.consumed - true or false
+     * @param {number} options.coolingTime - number
+     * @param {number} options.fluidAmount - FluidAmount
+     * @param {string} options.fluidType - Fluidtype: 'tag' or 'fluid'
+     * @param {Special.Fluid|Special.FluidTag} options.fluidId - fluidId
+     * @param {Special.Item} options.resultItem - resultItems
+     * @param {string} options.castingType - 'table' or 'basin'
      */
-    function castingBasin(type, Input, consumed, times, needFluidAmount, type2, fluidId, resultItem) {
-        let castObject = {}
-        castObject[type] = Input
+    function casting(options) {
+        const { type, itemId, consumed, coolingTime, fluidAmount, fluidType, fluidId, resultItem, castingType } = options
 
-        let fluidObject = {
-            "amount": needFluidAmount
-        }
-        fluidObject[type2] = fluidId
+        const castObject = { [type]: itemId }
+        const fluidObject = { amount: fluidAmount, [fluidType]: fluidId }
 
         event.custom({
-            "type": "tconstruct:retextured_casting_basin",
-            "cast": castObject,
-            "cast_consumed": consumed,
-            "cooling_time": times,
-            "fluid": fluidObject,
-            "result": resultItem
+            type: `tconstruct:${castingType === 'basin' ? 'retextured_casting_basin' : 'casting_table'}`,
+            cast: castObject,
+            cast_consumed: consumed,
+            cooling_time: coolingTime,
+            fluid: fluidObject,
+            result: resultItem,
+            ...(castingType === 'table' && { switch_slots: true })
         })
     }
 
     // 空白沙子模具
-    castingTable(
-        "item",
-        'minecraft:sandstone',
-        true,
-        60,
-        30,
-        "fluid",
-        'tconstruct:molten_iron',
-        'tconstruct:blank_sand_cast',
-    )
+    casting({
+        type: 'item',
+        itemId: 'minecraft:sandstone',
+        consumed: true,
+        coolingTime: 60,
+        fluidAmount: 30,
+        fluidType: 'fluid',
+        fluidId: 'tconstruct:molten_iron',
+        resultItem: 'tconstruct:blank_sand_cast',
+        castingType: 'table'
+    })
+
     // 铁板
-        castingTable(
-        "item",
-        'tconstruct:plate_sand_cast',
-        true,
-        100,
-        50,
-        "fluid",
-        'tconstruct:molten_iron',
-        'create:iron_sheet'
-    )
+    casting({
+        type: 'item',
+        itemId: 'tconstruct:plate_sand_cast',
+        consumed: true,
+        coolingTime: 100,
+        fluidAmount: 50,
+        fluidType: 'fluid',
+        fluidId: 'tconstruct:molten_iron',
+        resultItem: 'create:iron_sheet',
+        castingType: 'table'
+    })
+
     // 安山合金
-    castingTable(
-        "item",
-        'tconstruct:ingot_cast',
-        false,
-        40,
-        50,
-        "fluid",
-        "kubejs:andesite_fluid",
-        'create:andesite_alloy'
-    )
+    casting({
+        type: 'item',
+        itemId: 'tconstruct:ingot_cast',
+        consumed: false,
+        coolingTime: 40,
+        fluidAmount: 50,
+        fluidType: 'fluid',
+        fluidId: 'kubejs:andesite_fluid',
+        resultItem: 'create:andesite_alloy',
+        castingType: 'table'
+    })
+
 })
